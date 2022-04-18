@@ -14,7 +14,7 @@ Download the appropriate `dtm` version for your platform from [DevStream Release
 
 ## 2 Prepare a Config File
 
-Copy the [examples/quickstart.yaml](../examples/quickstart.yaml) to your working directory and rename it to `config.yaml`:
+<!-- Copy the [examples/quickstart.yaml](../examples/quickstart.yaml) to your working directory and rename it to `config.yaml`: -->
 
 ```bash
 cp examples/quickstart.yaml config.yaml

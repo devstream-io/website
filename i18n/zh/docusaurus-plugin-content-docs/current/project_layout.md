@@ -27,7 +27,7 @@ Don't put a lot of code in the application directory. If you think the code can 
 
 It's common to have a small `main` function that imports and invokes the code from the `/internal` and `/pkg` directories and nothing else.
 
-See the [`/cmd`](cmd/README.md) directory for examples.
+<!-- See the [`/cmd`](cmd/README.md) directory for examples. -->
 
 ### `/internal`
 
@@ -41,7 +41,7 @@ Library code that's ok to use by external applications (e.g., `/pkg/mypubliclib`
 
 It's also a way to group Go code in one place when your root directory contains lots of non-Go components and directories making it easier to run various Go tools (as mentioned in these talks: [`Best Practices for Industrial Programming`](https://www.youtube.com/watch?v=PTE4VJIdHPg) from GopherCon EU 2018, [GopherCon 2018: Kat Zien - How Do You Structure Your Go Apps](https://www.youtube.com/watch?v=oL6JBUk6tj0) and [GoLab 2018 - Massimiliano Pippi - Project layout patterns in Go](https://www.youtube.com/watch?v=3gQa1LWwuzk)).
 
-See the [`/pkg`](pkg/README.md) directory if you want to see which popular Go repos use this project layout pattern. This is a common layout pattern, but it's not universally accepted and some in the Go community don't recommend it.
+<!-- See the [`/pkg`](pkg/README.md) directory if you want to see which popular Go repos use this project layout pattern. This is a common layout pattern, but it's not universally accepted and some in the Go community don't recommend it. -->
 
 It's ok not to use it if your app project is really small and where an extra level of nesting doesn't add much value (unless you really want to :-)). Think about it when it's getting big enough and your root directory gets pretty busy (especially if you have a lot of non-Go app components).
 
@@ -61,7 +61,7 @@ Note that since [`1.13`](https://golang.org/doc/go1.13#modules) Go also enabled 
 
 OpenAPI/Swagger specs, JSON schema files, protocol definition files.
 
-See the [`/api`](api/README.md) directory for examples.
+<!-- See the [`/api`](api/README.md) directory for examples. -->
 
 ## Web Application Directories
 
@@ -73,7 +73,7 @@ Web application specific components: static web assets, server side templates an
 
 ### `/hack`
 
-The [`/hack`](hack/README.md) directory contains many scripts that ensure continuous development of DevStream.
+<!-- The [`/hack`](hack/README.md) directory contains many scripts that ensure continuous development of DevStream. -->
 
 ### `/configs`
 
@@ -91,7 +91,7 @@ Scripts to perform various build, install, analysis, etc operations.
 
 These scripts keep the root level Makefile small and simple (e.g., [`https://github.com/hashicorp/terraform/blob/master/Makefile`](https://github.com/hashicorp/terraform/blob/master/Makefile)).
 
-See the [`/scripts`](scripts/README.md) directory for examples.
+<!-- See the [`/scripts`](scripts/README.md) directory for examples. -->
 
 ### `/build`
 
@@ -109,7 +109,7 @@ IaaS, PaaS, system and container orchestration deployment configurations and tem
 
 Additional external test apps and test data. Feel free to structure the `/test` directory anyway you want. For bigger projects it makes sense to have a data subdirectory. For example, you can have `/test/data` or `/test/testdata` if you need Go to ignore what's in that directory. Note that Go will also ignore directories or files that begin with "." or "_", so you have more flexibility in terms of how you name your test data directory.
 
-See the [`/test`](test/README.md) directory for examples.
+<!-- See the [`/test`](test/README.md) directory for examples. -->
 
 ## Other Directories
 
@@ -117,19 +117,19 @@ See the [`/test`](test/README.md) directory for examples.
 
 Design and user documents (in addition to your godoc generated documentation).
 
-See the [`/docs`](docs/README.md) directory for examples.
+<!-- See the [`/docs`](docs/README.md) directory for examples. -->
 
 ### `/tools`
 
 Supporting tools for this project. Note that these tools can import code from the `/pkg` and `/internal` directories.
 
-See the [`/tools`](tools/README.md) directory for examples.
+<!-- See the [`/tools`](tools/README.md) directory for examples. -->
 
 ### `/examples`
 
 Examples for your applications and/or public libraries.
 
-See the [`/examples`](examples/README.md) directory for examples.
+<!-- See the [`/examples`](examples/README.md) directory for examples. -->
 
 ### `/third_party`
 
@@ -147,7 +147,7 @@ Other assets to go along with your repository (images, logos, etc).
 
 This is the place to put your project's website data if you are not using GitHub pages.
 
-See the [`/website`](website/README.md) directory for examples.
+<!-- See the [`/website`](website/README.md) directory for examples. -->
 
 ## Directories You Shouldn't Have
 
