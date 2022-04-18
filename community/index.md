@@ -6,4 +6,4 @@ sidebar_position: 1
 
 Community
 
-## Getting Started Community
+## Getting Started with Our Community
