@@ -3,12 +3,12 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.docsSidebar.category.Tutorial - Basics": {
-    "message": "中文Tutorial - Basics",
-    "description": "The label for category Tutorial - Basics in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Plugins": {
+    "message": "Plugins",
+    "description": "The label for category Plugins in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Tutorial - Extras": {
-    "message": "中文Tutorial - Extras",
-    "description": "The label for category Tutorial - Extras in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Best Practices": {
+    "message": "Best Practices",
+    "description": "The label for category Best Practices in sidebar docsSidebar"
   }
 }
