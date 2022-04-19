@@ -33,10 +33,10 @@
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/devstream-io/devstream"
   },
   "copyright": {
-    "message": "Copyright © 2022 My Project, Inc. Built with Docusaurus.",
+    "message": "Copyright © 2022 DevStream.",
     "description": "The footer copyright"
   }
 }
