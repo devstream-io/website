@@ -1,9 +1,12 @@
 ---
 slug: hello-world
-title: 你好，世界
+title: 你好，世界！
 authors: daniel
-tags: [how-to, devstream]
+tags: [how-to, DevStream]
 ---
+
+![东安湖, 中国-成都](./banner.jpg)
+*东安湖，中国-成都。 照片：郭铁心 / CC-BY-CA*
 
 本文不算短，但是我知道你会读完。如果没读完，，不可能，绝对不可能！
 
@@ -13,12 +16,7 @@ tags: [how-to, devstream]
 
 > 不用尝试切换中英文版本看下我翻译的好不好，我就不是从英文版翻译过来的。
 > 我们的文章如果是双语发布，那就一定是两次原创。虽然表达的主题一样，可能也只有主题一样了。
->
-> English version: [《Hello, World》](/blog/hello-world)Author: @Tiexin Guo(郭铁心)
->
-> 中文版：[《你好，世界》](../hello-world/)作者：@胡涛(Daniel Hu)
 
----
 ## 别别别划走，给我三分钟，还你一天好心情！
 
 别急，相信我，下文不会让你看着"心力憔悴"，你可以笑着看完全文，并且毫不费力地学到新姿势，不是，新知识，新知识！
