@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-# 社区简介
+# DevStream 社区
 
-中文简介
-
-## 参与社区
+// TODO

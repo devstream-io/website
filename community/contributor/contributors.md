@@ -14,22 +14,22 @@ After a vote within DevStream PMC, we've decided to invite Wu Xu, Suming Yu, Yin
 
 ---
 
-![xuwu](contributors/xuwu.png)
+![xuwu](/img/community/contributor/contributors/xuwu.png)
 
 ### Yingchu Chen
 
 ---
 
-![chenyingchu](contributors/chenyingchu.png)
+![chenyingchu](/img/community/contributor/contributors/chenyingchu.png)
 
 ### Suming Yu
 
 ---
 
-![yusuming](contributors/yusuming.png)
+![yusuming](/img/community/contributor/contributors/yusuming.png)
 
 ### Kaitian Xie
 
 ---
 
-![xiekaitian](contributors/xiekaitian.png)
+![xiekaitian](/img/community/contributor/contributors/xiekaitian.png)

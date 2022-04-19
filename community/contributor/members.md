@@ -20,33 +20,33 @@ After a vote within DevStream PMC, we've decided to invite Wu Xu, Suming Yu, Yin
 
 ---
 
-![](members/xuwu.png)
+![](/img/community/contributor/members/xuwu.png)
 
 ### Yingchu Chen
 
 ---
 
-![chenyingchu](members/chenyingchu.png)
+![chenyingchu](/img/community/contributor/members/chenyingchu.png)
 
 ### Suming Yu
 
 ---
 
-![yusuming](members/yusuming.png)
+![yusuming](/img/community/contributor/members/yusuming.png)
 
 ### Kaitian Xie
 
 ---
 
-![xiekaitian](members/xiekaitian.png)
+![xiekaitian](/img/community/contributor/members/xiekaitian.png)
 
 ### "Mug" Time
 
 The Mugs are given to our members as a present. Here're a few of their personal photo shoots:
 
 
-![cyc-cup](members/cyc-cup.jpg)
+![cyc-cup](/img/community/contributor/members/cyc-cup.jpg)
 
 ---
 
-![ysm-cup](members/ysm-cup.jpg)
+![ysm-cup](/img/community/contributor/members/ysm-cup.jpg)
