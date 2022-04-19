@@ -11,13 +11,6 @@ tags: [how-to, devstream]
 
 好，让我们荡起双桨，不是，让我们开始吧！
 
-> 不用尝试切换中英文版本看下我翻译的好不好，我就不是从英文版翻译过来的。
-> 我们的文章如果是双语发布，那就一定是两次原创。虽然表达的主题一样，可能也只有主题一样了。
->
-> English version: [《Hello, World》](/blog/hello-world)Author: @Tiexin Guo(郭铁心)
->
-> 中文版：[《你好，世界》](../hello-world/)作者：@胡涛(Daniel Hu)
-
 ---
 ## 别别别划走，给我三分钟，还你一天好心情！
 
