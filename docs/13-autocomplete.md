@@ -10,7 +10,7 @@ In order to give a better experience for terminal users, we [support the Fig Aut
 
 Unlike other auto-complete tools, [Fig](https://fig.io) is more intuitive. It brings an IDE-style experience to the terminal users. Detailed introduction see the [official website](https://fig.io/)
 
-<!-- ![](images/fig-intro.gif) -->
+![](/img/docs/fig/fig-intro.gif)
 
 ```{admonition} Notice
 :class: warning
@@ -22,7 +22,7 @@ Temporary only supports MacOS now!
 
 See [https://fig.io](https://fig.io)
 
-<!-- ![](images/fig-terminal.png) -->
+![](/img/docs/fig/fig-terminal.png)
 
 Once the installation is complete, you need to integrate the terminal you are using.
 
@@ -30,19 +30,17 @@ Once the installation is complete, you need to integrate the terminal you are us
 
 #### Get Specified Plugin Information
 
-<!-- ![](images/cmd-show-plugins.gif) -->
+![](/img/docs/fig/cmd-show-plugins.gif)
 
 #### Get Subcommand Help Information
 
-<!-- ![](images/cmd-help.gif) -->
+![](/img/docs/fig/cmd-help.gif)
 
 #### Build a Specified Plugin
 
-<!-- ![](images/cmd-make.gif) -->
-
+![](/img/docs/fig/cmd-make.gif)
 
 ## Shell Autocomplete
-
 
 ### Bash Autocompletion
 
@@ -81,12 +79,10 @@ echo 'source <(dtm completion bash)' >>~/.bashrc
 After reloading your shell, dtm autocompletion should be working!
 #### On MacOS
 
-
 ```{admonition} Note
 :class: note
 Main reference [bash auto-completion on macOS](https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-bash-macos/)
 ```
-
 
 The completion script depends on `bash-completion`, So you have to install it first.
 
@@ -123,7 +119,6 @@ After reloading your shell, dtm autocompletion should be working!
 
 ### Fish Autocompletion
 
-
 You can generate completion script for Fish with the command `dtm completion fish`.Then add the following line to your `~/.config/fish/config.fish` file:
 
 ```fish
@@ -131,6 +126,7 @@ dtm completion fish | source
 ```
 
 After reloading your shell, dtm autocompletion should be working!
+
 ### PowerShell Autocompletion
 
 You can generate completion script for PowerShell with the command `dtm completion powershell`. Then add the following line to your `$PROFILE` file:
@@ -148,9 +144,3 @@ dtm completion powershell >> $PROFILE
 ```
 
 After reloading your shell, dtm autocompletion should be working.
-
-```{toctree}
----
-maxdepth: 1
----
-```

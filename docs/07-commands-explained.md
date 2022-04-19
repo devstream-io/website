@@ -50,11 +50,6 @@ _Note: the difference between "force delete" and "normal delete" is that in forc
 
 The purpose of `destroy` is that in case you accidentally deleted your config file during testing, there would still be a way to destroy everything that is defined in the _State_ so that you can have a clean slate.
 
-```{toctree}
----
-maxdepth: 1
----
-```
 ## 4 `dtm verify`
 
 The command `dtm verify` checks the following:
@@ -80,7 +75,7 @@ If not, it tries to give you a hint that maybe you forgot to run `dtm init` firs
 
 ### 4.4 Config / State / Resource
 
-<!-- For definitions of _Config_, _State_, and _Resource_, see the [config_state_resource_explanation.md](../core_concepts.md). -->
+For definitions of _Config_, _State_, and _Resource_, see [core concepts](core-concepts).
 
 `dtm verify` tries to see if the _Config_ matches the _State_ and the _Resource_ or not. If not, it tells you what exactly is not the same, and what would happen if you run `dtm apply`.
 

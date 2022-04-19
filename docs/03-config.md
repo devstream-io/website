@@ -32,7 +32,7 @@ The config file only contains:
     - `name`: the name of the tool, string, without underscore
     - `plugin`: the plugin to be used
     - you can have duplicated `name` in one config file, you can also have duplicated `plugin` in one config file, but the `name + plugin` combination must be unique in one config file
-<!-- - Each dictionary (tool) has an optional field which is `options`, which in turn is a dictionary containing parameters for that specific plugin. For plugins' parameters, see [plugins](./plugins.md). -->
+- Each dictionary (tool) has an optional field which is `options`, which in turn is a dictionary containing parameters for that specific plugin. For plugins' parameters, see the "plugins" section of this document.
 - Each directory (tool) has an optional field which is `dependsOn`. Continue reading for detail about dependencies.
 
 ## Example Config File
@@ -171,10 +171,4 @@ tools:
     templateURL: https://gitlab.com/ironcore864/go-hello-world/-/raw/main/go.tpl
     templateVariables:
       App: hello
-```
-
-```{toctree}
----
-maxdepth: 1
----
 ```

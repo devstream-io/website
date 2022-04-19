@@ -79,9 +79,3 @@ git push -f origin feat-xxx
 ```
 
 Then you can create a `pr` on GitHub.
-
-```{toctree}
----
-maxdepth: 1
----
-```

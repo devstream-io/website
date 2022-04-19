@@ -14,7 +14,7 @@ Download the appropriate `dtm` version for your platform from [DevStream Release
 
 ## 2 Prepare a Config File
 
-<!-- Copy the [examples/quickstart.yaml](../examples/quickstart.yaml) to your working directory and rename it to `config.yaml`: -->
+Copy the [examples/quickstart.yaml](https://github.com/devstream-io/devstream/blob/main/examples/quickstart.yaml) to your working directory and rename it to `config.yaml`:
 
 ```bash
 cp examples/quickstart.yaml config.yaml
@@ -32,7 +32,7 @@ sed -i.bak "s/YOUR_DOCKER_USERNAME/ironcore864/g" config.yaml
 
 > This config file uses two plugins, one will create a GitHub repository and bootstrap it into a Golang web app, and the other will create GitHub Actions workflow for it.
 
-The two plugins [require an environment variable](./plugins/github-repo-scaffolding-golang.md) to work, so let's set it:
+The two plugins [require an environment variable](plugins/github-repo-scaffolding-golang) to work, so let's set it:
 
 ```bash
 export GITHUB_TOKEN="YOUR_GITHUB_TOKEN_HERE"
@@ -138,10 +138,4 @@ Enter a value (Default is n): y
 2022-03-04 12:10:42 ✔ [SUCCESS]  Plugin golang-demo-actions delete done.
 2022-03-04 12:10:42 ✔ [SUCCESS]  All plugins destroyed successfully.
 2022-03-04 12:10:42 ✔ [SUCCESS]  Destroy finished.
-```
-
-```{toctree}
----
-maxdepth: 1
----
 ```
