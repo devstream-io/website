@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'DevStream',
+  tagline: 'DevStream: the open-source DevOps toolchain manager (DTM)',
+  url: 'https://www.devstream.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
@@ -91,6 +91,16 @@ const config = {
             docsPluginId: 'community'
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://medium.com/devstream',
+            position: 'left',
+            label: 'Medium',
+          },
+          {
+            href: 'https://dev.to/devstream',
+            position: 'left',
+            label: 'Dev.to',
+          },
           {
             href: 'https://github.com/devstream-io/devstream',
             label: 'GitHub',
