@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.communitySidebar.category.Contributor": {
-    "message": "Contributor",
+    "message": "荣誉墙",
     "description": "The label for category Contributor in sidebar communitySidebar"
   }
 }

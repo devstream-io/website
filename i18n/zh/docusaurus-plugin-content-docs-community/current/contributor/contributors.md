@@ -14,22 +14,22 @@ sidebar_position: 1
 
 ---
 
-![xuwu](contributors/xuwu.png)
+![xuwu](/img/community/contributor/contributors/xuwu.png)
 
 ### 陈映初
 
 ---
 
-![chenyingchu](contributors/chenyingchu.png)
+![chenyingchu](/img/community/contributor/contributors/chenyingchu.png)
 
 ### 余苏明
 
 ---
 
-![yusuming](contributors/yusuming.png)
+![yusuming](/img/community/contributor/contributors/yusuming.png)
 
 ### 谢开天
 
 ---
 
-![xiekaitian](contributors/xiekaitian.png)
+![xiekaitian](/img/community/contributor/contributors/xiekaitian.png)
