@@ -1,9 +1,12 @@
 ---
 slug: hello-world
-title: 你好，世界
+title: Hello, World!
 authors: ironcore
-tags: [how-to, devstream]
+tags: [how-to, DevStream]
 ---
+
+![Dong'an Lake, Chengdu, China](./banner.jpg)
+*Dong'an Lake, Chengdu, China. Photo: Tiexin Guo / CC-BY-CA*
 
 Hello, and welcome to the DevStream blog!
 
@@ -16,16 +19,6 @@ If you haven't heard of DevStream yet, please have a quick glance over our [READ
 
 Without further adieu, let's get started.
 
----
-
-{{< imgproc featured-background Fill "1200x800" >}}
-Dong'an Lake, Chengdu, China.
-{{< /imgproc >}}
-
----
-> English version: [《Hello, World》](../hello-world)Author: @Tiexin Guo(郭铁心)
->
-> 中文版：[《你好，世界》](../../zh/blog/hello-world/)作者：@胡涛(Daniel Hu)
 ---
 
 ## TL;DR
