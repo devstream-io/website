@@ -23,8 +23,6 @@ The dependency `dependsOn` is an array of strings, with each element being a dep
 
 - We call what the plugin created a _Resource_, and the `Read()` interface of that plugin returns a description of that resource, which is in turn stored as part of the state.
 
-```{toctree}
----
-maxdepth: 1
----
-```
+Config-State-Resource workflow:
+
+![config state resource workflow](/img/docs/config-state-resource.png)

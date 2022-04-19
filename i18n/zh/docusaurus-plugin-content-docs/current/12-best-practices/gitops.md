@@ -2,11 +2,11 @@
 
 ## Plugins needed
 
-1. [github-repo-scaffolding-golang](../plugins/github-repo-scaffolding-golang.md)
-2. [jira-github](../plugins/jira-github-integ.md)
-3. [githubactions-golang](../plugins/githubactions-golang.md)
-4. [argocd](../plugins/argocd.md)
-5. [argocdapp](../plugins/argocdapp.md)
+1. [github-repo-scaffolding-golang](/docs/plugins/github-repo-scaffolding-golang)
+2. [jira-github](/docs/plugins/jira-github-integ)
+3. [githubactions-golang](/docs/plugins/githubactions-golang)
+4. [argocd](/docs/plugins/argocd)
+5. [argocdapp](/docs/plugins/argocdapp)
 
 The dependencies of these plugins are(`a -> b` means for `a depends on b`):
 
@@ -28,7 +28,7 @@ Download the appropriate `dtm` version for your platform from [DevStream Release
 
 ## Prepare the Config File
 
-<!-- Copy the [examples/gitops.yaml](../../examples/gitops.yaml) to your working directory: -->
+Copy the [examples/gitops.yaml](https://github.com/devstream-io/devstream/blob/main/examples/gitops.yaml) to your working directory:
 
 ```bash
 cp examples/gitops.yaml config-gitops.yaml
@@ -111,10 +111,4 @@ and you should see similar output:
 ```
 2022-03-11 13:39:11 ✔ [SUCCESS]  All plugins destroyed successfully.
 2022-03-11 13:39:11 ✔ [SUCCESS]  Destroy finished.
-```
-
-```{toctree}
----
-maxdepth: 1
----
 ```

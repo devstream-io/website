@@ -13,7 +13,7 @@ For example, if _Tool_ A has an output, we can use its value as _Tool_ B's optio
 Notes:
 
 - At the moment, B using A's output doesn't mean B "depends on" A.
-- If B really needs to "depend on" A, i.e., we want to make sure A runs first before B runs, we still need to use the `dependsOn` keyword (see the previous section "[Core Concepts](./core_concepts.md)" for more details.)
+- If B really needs to "depend on" A, i.e., we want to make sure A runs first before B runs, we still need to use the `dependsOn` keyword (see the previous section "[Core Concepts](core-concepts)" for more details.)
 
 ## Syntax
 
@@ -91,10 +91,3 @@ tools:
 In this example:
 - Tool "demo" (plugin: argocdapp) depends on tool "repo" (plugin: github-repo-scaffolding-golang)
 - Tool "demo" has an user option "options.source.repoURL", which uses tool "repo" output "repoURL" (`${{ repo.github-repo-scaffolding-golang.outputs.repoURL }}`)
-
-
-```{toctree}
----
-maxdepth: 1
----
-```
