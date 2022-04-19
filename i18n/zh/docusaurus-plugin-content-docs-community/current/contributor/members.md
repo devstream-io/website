@@ -20,25 +20,25 @@ sidebar_position: 2
 
 ---
 
-![](members/xuwu.png)
+![](/img/community/contributor/members/xuwu.png)
 
 ### 陈映初
 
 ---
 
-![chenyingchu](members/chenyingchu.png)
+![chenyingchu](/img/community/contributor/members/chenyingchu.png)
 
 ### 余苏明
 
 ---
 
-![yusuming](members/yusuming.png)
+![yusuming](/img/community/contributor/members/yusuming.png)
 
 ### 谢开天
 
 ---
 
-![xiekaitian](members/xiekaitian.png)
+![xiekaitian](/img/community/contributor/members/xiekaitian.png)
 
 ### 秀杯子时间
 
@@ -46,8 +46,8 @@ sidebar_position: 2
 
 (各位 Members，如果觉得自己没发挥好，请随时将最新照片发给我，I'll update it in no time!)
 
-![cyc-cup](members/cyc-cup.jpg)
+![cyc-cup](/img/community/contributor/members/cyc-cup.jpg)
 
 ---
 
-![ysm-cup](members/ysm-cup.jpg)
+![ysm-cup](/img/community/contributor/members/ysm-cup.jpg)
