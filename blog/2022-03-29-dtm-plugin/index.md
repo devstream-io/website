@@ -14,7 +14,7 @@ Yes, the title of this post isn't bluffing: you can actually create a plugin for
 > 
 > If you haven't read it yet, here's a quick link for you:
 > 
-> [Hello, world!](hello-world).
+> [Hello, world!](/blog/hello-world).
  
 In this blog, we will walk you through the steps of creating a DevStream plugin from scratch with an example. 
 
@@ -26,7 +26,7 @@ DevStream is an amazing tool that lets you install, update, manage, and integrat
 
 Not to brag, but with DevStream, you can have your own DevOps toolchain that is specifically tailored to your need up and running in 5 minutes.
 
-Don't believe it? Check out our [docs](/docs) and follow the quickstart guide!
+Don't believe it? Check out our [docs](/docs/index) and follow the quickstart guide!
 
 ## Existing Plugins
 
