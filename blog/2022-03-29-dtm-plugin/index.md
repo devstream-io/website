@@ -26,7 +26,7 @@ DevStream is an amazing tool that lets you install, update, manage, and integrat
 
 Not to brag, but with DevStream, you can have your own DevOps toolchain that is specifically tailored to your need up and running in 5 minutes.
 
-Don't believe it? Check out our [docs](../docs) and follow the quickstart guide!
+Don't believe it? Check out our [docs](/docs) and follow the quickstart guide!
 
 ## Existing Plugins
 
