@@ -2,27 +2,27 @@
 sidebar_position: 1
 ---
 
-# Plugins List
+# 所有插件列表
 
-| Type                   | Plugin                         | Note                           | Usage/Doc |
-|------------------------|--------------------------------|--------------------------------|-----------|
-| Issue Tracking         | trello-github-integ            | Trello/GitHub integration      | [doc](trello-github-integ)            |
+| 类型                    | 插件名                          | 注释                           | 文档                                   |
+|------------------------|--------------------------------|--------------------------------|---------------------------------------|
+| Issue Tracking         | trello-github-integ            | Trello/GitHub整合               | [doc](trello-github-integ)            |
 | Issue Tracking         | trello                         | Trello                         | [doc](trello)                         |
-| Issue Tracking         | jira-github-integ              | Jira/GitHub integration        | [doc](jira-github-integ)              |
-| Source Code Management | github-repo-scaffolding-golang | Go WebApp scaffolding          | [doc](github-repo-scaffolding-golang) |
-| CI                     | jenkins                        | Jenkins installation           | [doc](jenkins)                        |
-| CI                     | githubactions-golang           | GitHub Actions CI for Golang   | [doc](githubactions-golang)           |
-| CI                     | githubactions-python           | GitHub Actions CI for Python   | [doc](githubactions-python)           |
-| CI                     | githubactions-nodejs           | GitHub Actions CI for Nodejs   | [doc](githubactions-nodejs)           |
-| CI                     | gitlabci-golang                | GitLab CI for Golang           | [doc](gitlabci-golang)                |
-| CI                     | gitlabci-generic               | Generic GitLab CI              | [doc](gitlabci-generic)               |
-| CD/GitOps              | argocd                         | ArgoCD installation            | [doc](argocd)                         |
-| CD/GitOps              | argocdapp                      | ArgoCD Application creation    | [doc](argocdapp)                      |
-| Monitoring             | kube-prometheus                | Prometheus/Grafana K8s install | [doc](kube-prometheus)                |
-| Observability          | devlake                        | DevLake installation           | [doc](devlake)                        |
-| LDAP                   | openldap                       | OpenLDAP installation          | [doc](openldap)                       |
+| Issue Tracking         | jira-github-integ              | Jira/GitHub整合                 | [doc](jira-github-integ)              |
+| Source Code Management | github-repo-scaffolding-golang | Go WebApp代码脚手架              | [doc](github-repo-scaffolding-golang) |
+| CI                     | jenkins                        | Jenkins安装                     | [doc](jenkins)                        |
+| CI                     | githubactions-golang           | Golang的GitHub Actions CI      | [doc](githubactions-golang)           |
+| CI                     | githubactions-python           | Python的GitHub Actions CI      | [doc](githubactions-python)           |
+| CI                     | githubactions-nodejs           | Nodejs的GitHub Actions CI      | [doc](githubactions-nodejs)           |
+| CI                     | gitlabci-golang                | Golang的GitLab CI for           | [doc](gitlabci-golang)                |
+| CI                     | gitlabci-generic               | 通用的GitLab CI                 | [doc](gitlabci-generic)               |
+| CD/GitOps              | argocd                         | ArgoCD安装                      | [doc](argocd)                         |
+| CD/GitOps              | argocdapp                      | 创建ArgoCD Application          | [doc](argocdapp)                      |
+| Monitoring             | kube-prometheus                | Prometheus/Grafana K8s安装      | [doc](kube-prometheus)                |
+| Observability          | devlake                        | DevLake安装                     | [doc](devlake)                        |
+| LDAP                   | openldap                       | OpenLDAP安装                    | [doc](openldap)                       |
 
-Or, to get a list of plugins, run:
+或者，执行如下`dtm`命令来显示支持的插件：
 
 ```shell
 $ dtm list plugins
