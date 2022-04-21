@@ -17,7 +17,7 @@ In my previous article, I walked you guys through "How to Create a Local Kuberne
 
 You might ask why that article is written by [Tiexin Guo](https://github.com/IronCore864), not me. Of course! As I said in the beginning, this blog you are reading now is my first English blog. So, technically, the one above isn’t “my” article, but I did write the Chinese version of it:
 
-- [从零开始快速搭建本地 Kubernetes 测试环节](/zh/blog/local-k8s-with-kind#install-docker)
+- [从零开始快速搭建本地 Kubernetes 测试环节](https://www.devstream.io/zh/blog/local-k8s-with-kind)
 
 Both `minikube` and `Kind` are the most well-known and popular choices to run a Kubernetes environment on a local computer. Since I've shown you how to use `Kind`, I might as well introduce `minikube` to youadorable today.
 
