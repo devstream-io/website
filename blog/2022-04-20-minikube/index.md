@@ -5,29 +5,29 @@ authors: daniel
 tags: [minikube, Kubernetes]
 ---
 
-What’s up guys, I’m Daniel! Yeah, this English blog is WRITTEN by me, not TRANSLATED  by me! It’s my first English blog in my whole life. If you’re a Chinese reader, maybe you’ve ever seen my Chinese blogs before. Right, I wrote a lot of blogs, but only in Chinese. Believe it or not, I’m very poor at English. But I want to have a try today and I’ll do my best. Let’s get started.
+What’s up guys, this is Daniel! Yeah, this English blog is WRITTEN by me, not TRANSLATED by me! It’s my first English blog in my whole life. If you are a Chinese reader, maybe you’ve ever seen my Chinese blogs before. Right, I wrote a lot of blogs, but only in Chinese. Believe it or not, English isn’t my strong suit. But I want to have a try today and I’ll do my best. Let’s get started.
 
-## What we'll talk about today
+## What We Will Talk about Today (note: title case)
 
-If you ask me how to create a local Kubernetes cluster, I'll tell you [Kind](https://kind.sigs.k8s.io), [minikube](https://minikube.sigs.k8s.io/docs/), and [Kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) are all good choices. If you ask me which tool is the most recommended for beginners, my answer must be `minikube` or `Kind`. `minikube` is more powerful than `Kind` and `Kind` is easier than `minikube`.
+If you ask me how to create a local Kubernetes cluster, I'll tell you [Kind](https://kind.sigs.k8s.io), [minikube](https://minikube.sigs.k8s.io/docs/), and [Kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) are all good choices. If you ask me which tool is the most recommended for beginners, my answer must be `minikube` or `Kind`. `minikube` is more powerful than `Kind`, and `Kind` is easier than `minikube`.
 
-I walked you guys through "How to Create a Local Kubernetes Cluster from the Ground Up" with `Kind` in my previous article. If you are interested in it, here's a quick link for you:
+In my previous article, I walked you guys through "How to Create a Local Kubernetes Cluster from the Ground Up" with `Kind`. If you are interested, here's a quick link for you:
 
 - [Creating a Local Kubernetes Cluster from the Ground Up](/blog/local-k8s-with-kind#install-docker)
 
-You ask me why that article is written by [Tiexin Guo](https://github.com/IronCore864)? Of course! As I said at start this blog you are reading is my first English blog, so I wrote that blog Chinese version:
+You might ask why that article is written by [Tiexin Guo](https://github.com/IronCore864), not me. Of course! As I said in the beginning, this blog you are reading now is my first English blog. So, technically, the one above isn’t “my” article, but I did write the Chinese version of it:
 
 - [从零开始快速搭建本地 Kubernetes 测试环节](/zh/blog/local-k8s-with-kind#install-docker)
 
-Both `minikube` and `Kind` are the most well-known and popular choices to run a Kubernetes environment on a local computer. I've shown you how to use `Kind`, so I'm going to introduce `minikube` to you today.
+Both `minikube` and `Kind` are the most well-known and popular choices to run a Kubernetes environment on a local computer. Since I've shown you how to use `Kind`, I might as well introduce `minikube` to youadorable today.
 
-## Quick Start with minikube
+## Quick Start with `minikube`
 
-minikube is a command-line tool like `Kind` that you can use to create and configure Kubernetes clusters locally on your computer. 
+`minikube` is a command-line tool like `Kind` that you can use to create and configure Kubernetes clusters locally on your computer. 
 
-### How to install minikube
+### How to Install `minikube`
 
-If your computer is the same as mine, Mac with m1 chip, you can install the latest minikube stable release in 2 steps:
+If your computer is the same as mine, Mac with m1 chip, you can install the latest `minikube` stable release in 2 steps:
 
 ```sh
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-arm64
@@ -40,11 +40,11 @@ If you are using `Homebrew`, just one command:
 brew install minikube
 ```
 
-So if you have other platforms or architectures, see the Installation section in [minikube start](https://minikube.sigs.k8s.io/docs/start/) for more details.
+If your computer is of other platforms or architectures, see the “Installation” section in [minikube start](https://minikube.sigs.k8s.io/docs/start/) for more details.
 
-### minikube start
+### `minikube start`
 
-Just like the section title we used here, to start using minikube, just `minikube start`:
+Like the section title we used here, to start using minikube, run `minikube start`: (note: “just” sounds informal; try not to use it too frequently)
 
 ```sh
 $ minikube start
@@ -62,15 +62,15 @@ $ minikube start
 ❌  Exiting due to DRV_DOCKER_NOT_RUNNING: Found docker, but the docker service isn't running. Try restarting the docker service.
 ```
 
-Ok, It doesn’t matter, just needs Docker to install. In my previous article [How to Create a Local Kubernetes Cluster from the Ground Up](/blog/local-k8s-with-kind#install-docker), I introduced how to "Install Docker". So, Let's continue with Docker installed.
+Ok, it doesn’t matter; we need to install Docker. In my previous article [How to Create a Local Kubernetes Cluster from the Ground Up](/blog/local-k8s-with-kind#install-docker), I introduced how to "Install Docker".
 
-After the Docker is installed, you ask me what you'll need in total?
+After the Docker is installed, what we'll need in total?
 
 - A not too bad computer;
-- Internet connection;
-- Container or virtual machine manager, such as: Docker, Hyper-V, KVM, VirtualBox, or VMware Workstation ...
+- Internet connections;
+- Container or virtual machine hypervisor, such as: Docker, Hyper-V, KVM, VirtualBox, or VMware Workstation ...
 
-Let's try to run `minikube start` again. This command is time-consuming the first time you use it, especially if the network speed is slow. Feel free and take a cup of coffee then come back to see the result.
+Let's try to run `minikube start` again. This command is time-consuming the first time you use it, especially if the network speed is low. Feel free to have a cup of coffee then come back to see the result.
 
 2000 years later...
 
@@ -102,9 +102,9 @@ $ minikube start
 🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
 ```
 
-### Access your shiny new Kubernetes cluster
+### Access Your Shiny Kubernetes Cluster
 
-Do you have `kubectl` installed? If yes, you can now use it to access your shiny new Kubernetes cluster:
+Do you have `kubectl` installed? If yes, you can now use it to access your shiny Kubernetes cluster:
 
 ```sh
 $ kubectl get pod -A
@@ -118,7 +118,7 @@ kube-system   kube-scheduler-minikube            1/1     Running   0            
 kube-system   storage-provisioner                1/1     Running   1 (2m40s ago)   3m22s
 ```
 
-Alternatively, minikube can download the appropriate version of `kubectl` after we use the command `minikube kubectl`:
+Alternatively, `minikube` can download the appropriate version of `kubectl` with the command `minikube kubectl`:
 
 ```sh
 minikube kubectl -- get pod -A
@@ -134,15 +134,15 @@ kube-system   kube-scheduler-minikube            1/1     Running   0            
 kube-system   storage-provisioner                1/1     Running   1 (4m2s ago)   4m44s
 ```
 
-Cooooool!
+Cooooool! (Note: great!)
 
-Are you thinking this command is too complex? Just use the config below and you'll be happy:
+Are you thinking this command is too complicated? Use the config below and you'll be happy:
 
 ```sh
 alias kubectl="minikube kubectl --"
 ```
 
-I'm used to using command-line to access the Kubernetes cluster. Yes, I never use the Kubernetes Dashboard. But if you like insight into your cluster state with Dashboard, minikube bundles it for you:
+I'm used to command-line to access the Kubernetes cluster. Yes, I never use the Kubernetes Dashboard. But if you like to have some insight into your cluster state with a Dashboard, `minikube` bundles it for you:
 
 ```sh
 $ minikube dashboard
@@ -159,11 +159,11 @@ At this time, your browser will automatically open a new tab, and the Dashboard 
 
 ![Kubernetes Dashboard](./dashboard.png)
 
-### Deploy an Application in your shiny new Kubernetes cluster
+### Deploy an Application in Your Shiny Kubernetes Cluster
 
-We could create a sample deployment with the image `preslavmihaylov/kubehelloworld:latest` and expose it on port 3000.
+Let’s create a sample deployment with the image `preslavmihaylov/kubehelloworld:latest` and expose it on port 3000.
 
-The [minikube start](https://minikube.sigs.k8s.io/docs/start/) told us to use the `k8s.gcr.io/echoserver:1.4` to launch the `hello-minikube` application, but it'll be failed at Mac with m1 chip. See [this issue](https://github.com/kubernetes/minikube/issues/11107) for more details. 
+The [minikube start](https://minikube.sigs.k8s.io/docs/start/) told us to use the `k8s.gcr.io/echoserver:1.4` to launch the `hello-minikube` application, but it'll fail on a Mac with m1 chip. See [this issue](https://github.com/kubernetes/minikube/issues/11107) for more details. 
 
 ```sh
 $ kubectl create deployment sample-deploy --image=preslavmihaylov/kubehelloworld:latest
@@ -189,9 +189,9 @@ Forwarding from [::1]:3000 -> 3000
 
 Open the browser, visit `localhost:3000`, and "Hello World!" will soon show up.
 
-Another way to access this service is to use `minikube service sample-deploy` command and minikube will launch a browser page for you with the right `url:port` address.
+Another way to access this service is to use the `minikube service sample-deploy` command and minikube will launch a browser page for you with the right `url:port` address.
 
-And we could use the command `minikube tunnel` to use the `LoadBalancer` type Service. Here is an example:
+And we can use the command `minikube tunnel` to use the `LoadBalancer` type Service. Here is an example:
 
 ```sh
 $ kubectl delete service sample-deploy
@@ -200,7 +200,7 @@ $ kubectl expose deployment sample-deploy --type=LoadBalancer --port=3000
 service/sample-deploy exposed
 ```
 
-In another window, start the tunnel to create a routable IP with the command `minikube tunnel`:
+In another terminal window, start the tunnel to create a routable IP with the command `minikube tunnel`:
 
 ```sh
 $ minikube tunnel
@@ -234,19 +234,21 @@ I'll show you some commands here:
 - `minikube start -p aged --kubernetes-version=v1.16.1` # Create a second cluster running an older Kubernetes version.
 - `minikube delete --all` # Yeah, delete all, delete anything, delete all clusters.
 
-That's all? No! But if you want to know all, I'll show you the [command docs here](https://minikube.sigs.k8s.io/docs/commands/).
+That's all?
 
-## How to Push Images into a minikube Cluster
+No! But if you want to know them all, I'll show you the [command docs here](https://minikube.sigs.k8s.io/docs/commands/).
 
-There are about 8 ways you can use to push images into a minikube cluster. And I'll show you the most useful 2 ways today.
+## How to Push Images into a `minikube` Cluster
 
-### Push images using the `cache` command
+There are about 8 ways you can use to push images into a `minikube` cluster. And I'll show you the most useful two ways today.
+
+### Push Images with the `cache` Command
 
 - `minikube cache add [flags] [options]` # Add an image to local cache.
 
 Cache? Yes, the image will be cached by minikube and automatically pushed into all clusters, not like the `Kind` method: `kind load docker-image <IMAGE> [IMAGE...] [flags]`.
 
-Let's see how many sub-commands does `cache` have:
+Let's see how many sub-commands `cache` has:
 
 ```sh
 $ minikube cache -h
@@ -259,20 +261,20 @@ Available Commands:
   reload      reload cached images.
 ```
 
-Easy, doesn't it?
+Easy, isn't it?
 
-The only sub-command we need to talk maybe `reload`. If your image changes after you cached it, you need to execute `minikube cache reload [flags] [options]`
+The only sub-command we need to talk about might be `reload`. If your image changed after you had cached it, you need to execute `minikube cache reload [flags] [options]`
 
-e.g.
+E.g.:
 
 - `minikube cache add alpine:latest` # Cache alpine:latest for all clusters.
 - `minikube cache reload alpine:latest` # Reload alpine:latest if it's changed.
 - `minikube cache list` # Display what images we have added to the cache.
 - `minikube cache delete alpine:latest` # Just delete alpine:latest
 
-### Pushing directly to the in-cluster Docker daemon
+### Pushing Directly to the In-Cluster Docker Daemon
 
-If the image we want to use inside the minikube cluster is built locally instead of pulled from a registry, we can reuse the Docker daemon inside the minikube cluster. Yeah, we don’t have to build the image on our host machine and `cache` it, we can just build inside the same docker daemon inside the minikube cluster.
+If the image we want to use inside the `minikube` cluster is built locally instead of pulled from a registry, we can reuse the Docker daemon inside the `minikube` cluster. Yeah, we don’t have to build the image on our host machine and `cache` it; we can just build inside the same docker daemon inside the `minikube` cluster.
 
 ```sh
 $ docker ps
@@ -287,9 +289,9 @@ d45474ce1888   k8s.gcr.io/pause:3.6             "/pause"                 5 hours
 ...
 ```
 
-Have you seen what happend?
+What happened?
 
-After the command `eval $(minikube docker-env)` is executed, `docker` accessed the docker daemon inside the minikube cluster! What's the secret with `minikube docker-env` command? Let's dig it:
+After the command `eval $(minikube docker-env)` is executed, `docker` accesses the docker daemon inside the `minikube` cluster! What's the secret with `minikube docker-env` command? Let's dig into it:
 
 ```sh
 $ minikube docker-env
@@ -302,14 +304,14 @@ export MINIKUBE_ACTIVE_DOCKERD="minikube"
 # eval $(minikube -p minikube docker-env)
 ```
 
-I don't think I need to explain more about what happends. And we can `build` against the docker inside minikube now. Just execute a command like `docker build -t my-image:latest .`, `my-image:latest` is instantly accessible to the kubernetes cluster. 
+I don't think I need to explain more about what happened. And we can `build` against the Docker inside `minikube` now. Just execute a command like `docker build -t my-image:latest .`, `my-image:latest` is instantly accessible to the Kubernetes cluster. 
 
-## How toooo
+## How to …
 
-Oops, there are many how-tos we could talk about, but I believe that you can start to use minikube now. Maybe I'll talk about more how-tos next time. If you want to delve into minikube now, go ahead to study the [official documentation](https://minikube.sigs.k8s.io/docs/).
+Oops, there are many how-tos we could talk about, but I believe that you can start using `minikube` now. Maybe I'll talk about more how-tos next time. If you want to dive into `minikube` now, go ahead and study the [official documentation](https://minikube.sigs.k8s.io/docs/).
 
 ## Summary
 
-Cool, I finished writing this blog, It's like opening Pandora's box, I love this feeling. Of course, I know that this blog is at the primary-school-student level, But I believe I can do better and better.
+Cool, I finished writing this blog, It's like opening Pandora's box; I love this feeling. Of course, I know this blog is at the primary-school-student level, but I believe I can do better and better.
 
 Don’t forget to give a Like, Comment, and Subscribe! I’ll see you in the next article!
