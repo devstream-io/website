@@ -7,7 +7,7 @@ tags: [minikube, Kubernetes]
 
 What’s up guys, this is Daniel! Yeah, this English blog is WRITTEN by me, not TRANSLATED by me! It’s my first English blog in my whole life. If you are a Chinese reader, maybe you’ve ever seen my Chinese blogs before. Right, I wrote a lot of blogs, but only in Chinese. Believe it or not, English isn’t my strong suit. But I want to have a try today and I’ll do my best. Let’s get started.
 
-## What We Will Talk about Today (note: title case)
+## What We Will Talk about Today
 
 If you ask me how to create a local Kubernetes cluster, I'll tell you [Kind](https://kind.sigs.k8s.io), [minikube](https://minikube.sigs.k8s.io/docs/), and [Kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) are all good choices. If you ask me which tool is the most recommended for beginners, my answer must be `minikube` or `Kind`. `minikube` is more powerful than `Kind`, and `Kind` is easier than `minikube`.
 
@@ -44,7 +44,7 @@ If your computer is of other platforms or architectures, see the “Installation
 
 ### `minikube start`
 
-Like the section title we used here, to start using minikube, run `minikube start`: (note: “just” sounds informal; try not to use it too frequently)
+Like the section title we used here, to start using minikube, run `minikube start`:
 
 ```sh
 $ minikube start
@@ -134,7 +134,7 @@ kube-system   kube-scheduler-minikube            1/1     Running   0            
 kube-system   storage-provisioner                1/1     Running   1 (4m2s ago)   4m44s
 ```
 
-Cooooool! (Note: great!)
+Cooooool!
 
 Are you thinking this command is too complicated? Use the config below and you'll be happy:
 
