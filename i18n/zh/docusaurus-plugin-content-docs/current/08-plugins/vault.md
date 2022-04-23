@@ -1,4 +1,4 @@
-# *vault* Plugin
+# vault  Plugin
 
 This plugin installs [vault](https://www.vaultproject.io/) in an existing Kubernetes cluster using the Helm chart for you test or develop vault.
 This plugin installs vault with replicas:3 by default value
