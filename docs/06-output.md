@@ -20,28 +20,28 @@ Notes:
 To use the output, follow this format:
 
 ```
-${{ TOOL_NAME.PLUGIN.outputs.OUTPUT_KEY }}
+${{ TOOL_NAME.TOOL_INSTANCE_ID.outputs.OUTPUT_KEY }}
 ```
 
 For example, given config:
 
 ```yaml
 tools:
-- name: kanban
-  plugin: trello
+- name: trello
+  instanceID: default
   options:
     owner: IronCore864
     repo: golang-demo
     kanbanBoardName: golang-demo-board
 ```
 
-- TOOL_NAME is "kanban"
-- PLUGIN is "trello"
+- TOOL_NAME is "trello"
+- TOOL_INSTANCE_ID is "default"
 
-If the "trello" plugin has an output key name "boardId", then we can use its value by the following syntax:
+If the "trello" tool/plugin has an output key name "boardId", then we can use its value by the following syntax:
 
 ```
-${{ kanban.trello.outputs.boardId }}
+${{ trello.default.outputs.boardId }}
 ```
 
 ## Real-World Usage Example
@@ -51,15 +51,15 @@ Config:
 ```yaml
 ---
 tools:
-- name: repo
-  plugin: github-repo-scaffolding-golang
+- name: github-repo-scaffolding-golang
+  instanceID: default
   options:
     owner: IronCore864
     repo: golang-demo
     branch: main
     image_repo: ironcore864/golang-demo
-- name: cd
-  plugin: argocd
+- name: argocd
+  instanceID: default
   options:
     create_namespace: true
     repo:
@@ -72,9 +72,9 @@ tools:
       wait: true
       timeout: 10m
       upgradeCRDs: true
-- name: demo
-  plugin: argocdapp
-  dependsOn: [ "cd.argocd", "repo.github-repo-scaffolding-golang" ]
+- name: argocdapp
+  instanceID: default
+  dependsOn: [ "argocd.default", "github-repo-scaffolding-golang.default" ]
   options:
     app:
       name: golang-demo
@@ -85,9 +85,9 @@ tools:
     source:
       valuefile: values.yaml
       path: helm/golang-demo
-      repoURL: ${{ repo.github-repo-scaffolding-golang.outputs.repoURL }} # pay attention here
+      repoURL: ${{ github-repo-scaffolding-golang.default.outputs.repoURL }} # pay attention here
 ```
 
 In this example:
-- Tool "demo" (plugin: argocdapp) depends on tool "repo" (plugin: github-repo-scaffolding-golang)
-- Tool "demo" has an user option "options.source.repoURL", which uses tool "repo" output "repoURL" (`${{ repo.github-repo-scaffolding-golang.outputs.repoURL }}`)
+- The "default" instance of tool `argocdapp` depends on the "default" instance of tool `github-repo-scaffolding-golang` 
+- The "default" instance of tool `argocdapp` has an user option "options.source.repoURL", which uses the "default" instance of tool `github-repo-scaffolding-golang`'s output "repoURL" (`${{ github-repo-scaffolding-golang.default.outputs.repoURL }}`)

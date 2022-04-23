@@ -17,7 +17,7 @@ Download the appropriate `dtm` version for your platform from [DevStream Release
 Copy the [examples/quickstart.yaml](https://github.com/devstream-io/devstream/blob/main/examples/quickstart.yaml) to your working directory and rename it to `config.yaml`:
 
 ```bash
-cp examples/quickstart.yaml config.yaml
+curl -o config.yaml https://raw.githubusercontent.com/devstream-io/devstream/main/examples/quickstart.yaml
 ```
 
 Then modify the file accordingly.
