@@ -6,11 +6,12 @@ This plugin installs [ArgoCD](https://argoproj.github.io/cd/) in an existing Kub
 
 ```yaml
 tools:
+# name of the tool
 - name: argocd
-  # name of the plugin
-  plugin: argocd
-  # if specified, dtm will make sure the dependency is applied first before handling this tool.
-  dependsOn: [ "TOOL1_NAME.TOOL1_PLUGIN", "TOOL2_NAME.TOOL2_PLUGIN" ]
+  # id of the tool instance
+  instanceID: default
+  # format: name.instanceID; If specified, dtm will make sure the dependency is applied first before handling this tool.
+  dependsOn: []
   # options for the plugin
   options:
     # need to create the namespace or not, default: false

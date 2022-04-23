@@ -29,9 +29,9 @@ The config file only contains:
 - `tools` is a list of dictionaries.
 - Each dictionary defines a DevOps "tool" which is managed by a DevStream plugin
 - Each dictionary (tool) has the following mandatory fields:
-    - `name`: the name of the tool, string, without underscore
-    - `plugin`: the plugin to be used
-    - you can have duplicated `name` in one config file, you can also have duplicated `plugin` in one config file, but the `name + plugin` combination must be unique in one config file
+    - `name`: the name of the tool/plugin, string, without underscore
+    - `instanceID`: the id of this tool instance
+    - you can have duplicated `name` in one config file, you can also have duplicated `instanceID` in one config file, but the `name + instanceID` combination must be unique in one config file
 - Each dictionary (tool) has an optional field which is `options`, which in turn is a dictionary containing parameters for that specific plugin. For plugins' parameters, see the "plugins" section of this document.
 - Each directory (tool) has an optional field which is `dependsOn`. Continue reading for detail about dependencies.
 
@@ -41,8 +41,8 @@ The config file only contains:
 
 ```yaml
 tools:
-- name: go-webapp-repo
-  plugin: github-repo-scaffolding-golang
+- name: github-repo-scaffolding-golang
+  instanceID: default
   options:
     org: devstream-io
     repo: dtm-e2e-go
@@ -57,32 +57,32 @@ If you want tool A to be installed before tool B, you can let tool B depend on t
 The syntax for dependency is:
     
 ```yaml
-dependsOn: ["NAME1.PLUGIN1"]'
+dependsOn: [ "ToolName.ToolInstanceID" ]
 ```
 
 Since `dependsOn` is a list, a tool can have multiple dependencies:
 
 ```
-dependsOn: [ "NAME1.PLUGIN1", "NAME2.PLUGIN2", "..."]
+dependsOn: [ "ToolName1.ToolInstanceID1", "ToolName2.ToolInstanceID2", "..." ]
 ```
 
-In the following example, tool "go-webapp-repo" (using plugin github-repo-scaffolding-golang) will be installed before tool "golang-demo-actions" (using plugin githubactions-golang):
+In the following example, tool "github-repo-scaffolding-golang" (with instance id "default") will be installed before tool "githubactions-golang" (with instance id "default"):
 
 ```yaml
 tools:
-- name: go-webapp-repo
-  plugin: github-repo-scaffolding-golang
+- name: github-repo-scaffolding-golang
+  instanceID: default
   options:
     org: devstream-io
     repo: dtm-e2e-go
     branch: main
     image_repo: dtme2etest/dtm-e2e-go
-- name: golang-demo-actions
-  plugin: githubactions-golang
-  dependsOn: ["go-webapp-repo.github-repo-scaffolding-golang"]
+- name: githubactions-golang
+  instanceID: default
+  dependsOn: ["github-repo-scaffolding-golang.default"]
   options:
-    org: ${{go-webapp-repo.github-repo-scaffolding-golang.outputs.org}}
-    repo: ${{go-webapp-repo.github-repo-scaffolding-golang.outputs.repo}}
+    org: ${{github-repo-scaffolding-golang.default.outputs.org}}
+    repo: ${{github-repo-scaffolding-golang.default.outputs.repo}}
     language:
       name: go
       version: "1.17"
@@ -149,8 +149,8 @@ Example config with the variables defined in the above `variables.yaml`:
 
 ```yaml
 tools:
-- name: myapp
-  plugin: gitlabci-generic
+- name: gitlabci-generic
+  instanceID: default
   options:
     pathWithNamespace: [[ gitlabUser ]]/go-hello-world
     branch: [[ defaultBranch ]]
@@ -163,8 +163,8 @@ DevStream will render the config with the provided var file. After rendering, th
 
 ```yaml
 tools:
-- name: myapp
-  plugin: gitlabci-generic
+- name: gitlabci-generic
+  instanceID: default
   options:
     pathWithNamespace: ironcore864/go-hello-world
     branch: main
