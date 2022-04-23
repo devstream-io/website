@@ -1,9 +1,12 @@
 ---
 slug: get-started-with-minikube
-title: Get Started with minikube
+title: Getting Started with minikube
 authors: daniel
 tags: [minikube, Kubernetes]
 ---
+
+![Bar Mixato, Starbucks Reserve, Chengdu, China.](./banner.png)
+*Bar Mixato, Starbucks Reserve, Chengdu, China. Photo: Daniel Hu / CC-BY-CA*
 
 What’s up guys, this is Daniel! Yeah, this English blog is WRITTEN by me, not TRANSLATED by me! It’s my first English blog in my whole life. If you are a Chinese reader, maybe you’ve ever seen my Chinese blogs before. Right, I wrote a lot of blogs, but only in Chinese. Believe it or not, English isn’t my strong suit. But I want to have a try today and I’ll do my best. Let’s get started.
 
