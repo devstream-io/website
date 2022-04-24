@@ -8,8 +8,9 @@ This plugin installs hashicorp-vault with replicas:3 by default value.
 
 ```yaml
 tools:
+# name of the tool
 - name: hashicorp-vault
-  # name of the plugin
+  # id of the tool instance
   instanceID: default
   options:
     # need to create the namespace or not, default: false
