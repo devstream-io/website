@@ -61,7 +61,7 @@ Otherwise, use the namespace name you replaced.
 1. Initialize vault-0
 ```
 # Initialize vault-0 with one key share and one key threshold.
-kubectl exec vault-0 -n `$NAMESPACE` -- vault operator init -key-shares=1 -key-threshold=1 -format=json > cluster-keys.json
+kubectl exec vault-0 -n $NAMESPACE -- vault operator init -key-shares=1 -key-threshold=1 -format=json > cluster-keys.json
 ```
 2. Display the unseal key
 ```
@@ -76,7 +76,7 @@ VAULT_UNSEAL_KEY=$(cat cluster-keys.json | jq -r ".unseal_keys_b64[]")
 4. Unseal vault-0
 ```
 # Unseal vault-0 running on the vault-0 pod.
-kubectl exec vault-0  -n `$NAMESPACE` -- vault operator unseal $VAULT_UNSEAL_KEY
+kubectl exec vault-0  -n $NAMESPACE -- vault operator unseal $VAULT_UNSEAL_KEY
 ```
 You will see the above command's output like this. Make sure the value of `Initialized` is 'true' and the value of `Sealed` is 'false'.
 ```shell
