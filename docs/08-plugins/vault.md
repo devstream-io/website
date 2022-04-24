@@ -1,9 +1,9 @@
-# vault  Plugin
+# hashicorp-vault Plugin
 
-This plugin installs [vault](https://www.vaultproject.io/) in an existing Kubernetes cluster using the Helm chart for you test or develop vault.
-This plugin installs vault with replicas:3 by default value
+This plugin installs [hashicorp-vault](https://www.vaultproject.io/) in an existing Kubernetes cluster using the Helm chart for your tests or develops hashicorp-vault.
+This plugin installs hashicorp-vault with replicas:3 by default value.
 
-### Usage
+## Usage
 
 ```yaml
 tools:
@@ -24,7 +24,7 @@ tools:
       chart_name: hashicorp/vault
       # release name of the chart
       release_name: vault
-      # k8s namespace where Vault will be installed
+      # The k8s namespace is where you deploy the Vault to k8s
       namespace: hashicorp
       # whether to wait for the release to be deployed or not
       wait: true
@@ -46,51 +46,37 @@ tools:
               injection: enabled
 ```
 
-Currently, except for `values_yaml`, all the parameters in the example above are mandatory.
+## Initialize all the Vault pods
 
-After vault pods deployed  by the plugin vault, you can follow the instructions below to initialize the vault:
-Before you follow the instructions bellow, you must install `jq` tool: a command tool to analyze json
-
-If you work on MacOS:
-```
-brew install jq
-```
-
-If you work on linux OS like CentOS:
-```
-sudo yum install jq
-```
-
-If you work on Linux OS like Ubuntu:
-```
-sudo apt-get install jq
-```
+After you have deployed Vault pods by the plugin hashicorp-vault, you can follow the instructions below to initialize the Vault.
+At first, you must install [jq](https://stedolan.github.io/jq/) tool: jq is a lightweight and flexible command-line JSON processor.
+[Download jq](https://stedolan.github.io/jq/download/)
 
 
-in the  command below, the variable $NAMESPACE you should replace with "hashicorp-vault" if you not modify the namespace variable.
-Otherwise, use the namespace name you replaced
+In the command below, the variable `$NAMESPACE` you should replace with "hashicorp" if you do not modify the namespace variable.
+Otherwise, use the namespace name you replaced.
 
-1.
+1. Initialize vault-0
 ```
-   # Initialize vault-0 with one key share and one key threshold.
-   kubectl exec vault-0 -n $NAMESPACE -- vault operator init -key-shares=1 -key-threshold=1 -format=json > cluster-keys.json
+# Initialize vault-0 with one key share and one key threshold.
+kubectl exec vault-0 -n `$NAMESPACE` -- vault operator init -key-shares=1 -key-threshold=1 -format=json > cluster-keys.json
 ```
-2 .
-  ```
-   # Display the unseal key found in cluster-keys.json
-   cat cluster-keys.json | jq -r ".unseal_keys_b64[]"
-   ```
-3.
+2. Display the unseal key
 ```
-   # Create a variable named VAULT_UNSEAL_KEY to capture the Vault unseal key.
-   VAULT_UNSEAL_KEY=$(cat cluster-keys.json | jq -r ".unseal_keys_b64[]")
+# Display the unseal key found in cluster-keys.json
+cat cluster-keys.json | jq -r ".unseal_keys_b64[]"
 ```
-4.
+3. Create a variable to capture the Vault unseal key
 ```
-   # Unseal vault-0 running on the vault-0 pod.
-   kubectl exec vault-0  -n $NAMESPACE -- vault operator unseal $VAULT_UNSEAL_KEY
+# Create a variable named VAULT_UNSEAL_KEY to capture the Vault unseal key.
+VAULT_UNSEAL_KEY=$(cat cluster-keys.json | jq -r ".unseal_keys_b64[]")
 ```
-you will see the above command's output like this, make sure the item "Initialized" value is "true" and the item "Sealed" value is "false"
+4. Unseal vault-0
+```
+# Unseal vault-0 running on the vault-0 pod.
+kubectl exec vault-0  -n `$NAMESPACE` -- vault operator unseal $VAULT_UNSEAL_KEY
+```
+You will see the above command's output like this. Make sure the value of `Initialized` is 'true' and the value of `Sealed` is 'false'.
 ```shell
 Key                     Value
 ---                     -----
@@ -111,7 +97,7 @@ Raft Committed Index    30
 Raft Applied Index      30
 ```
 
-5. Initialize vault-1 and vault-2 like vault-1
+5. Initialize vault-1 and vault-2 like vault-0
 
 ```shell
 # Initialize vault-1
@@ -124,24 +110,21 @@ VAULT_UNSEAL_KEY=$(cat cluster-keys.json | jq -r ".unseal_keys_b64[]")
 kubectl exec vault-1  -n $NAMESPACE -- vault operator unseal $VAULT_UNSEAL_KEY
 ```
 
-6. 
+6. Verify all the pods status
 ```
-   # Verify all the Vault pods are running and ready.
-   kubectl get pods -n $NAMESPACE
+# Verify all the Vault pods are running and ready.
+kubectl get pods -n $NAMESPACE
 ```
 
-you will see the above command's output like this bellow, make sure all the pods are running and ready
+You will see the above command's outputs like this below. Make sure all the pods are running and ready.
 ```
 NAME                                 READY   STATUS    RESTARTS   AGE
 vault-0                              1/1     Running   0          2m29s
 vault-1                              1/1     Running   0          2m29s
 vault-2                              1/1     Running   0          2m29s
 vault-agent-injector-68dc986-bnsj2   1/1     Running   0          2m28s
-
 ```
 
-7. After the above operations, you want to use the vault to write/read secrets. 
-   You need to follow the documentation of hashicorp vault.
+7. After the above operations, you want to use the Vault to write/read secrets. You need to follow the documentation of the hashicorp Vault.
    - https://learn.hashicorp.com/tutorials/vault/kubernetes-minikube?in=vault/kubernetes#set-a-secret-in-vault
    - https://learn.hashicorp.com/tutorials/vault/getting-started-first-secret
-
