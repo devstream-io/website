@@ -7,7 +7,7 @@ This plugin installs vault with replicas:3 by default value
 
 ```yaml
 tools:
-- name: vault
+- name: hashicorp-vault
   # name of the plugin
   instanceID: default
   options:
@@ -25,7 +25,7 @@ tools:
       # release name of the chart
       release_name: vault
       # k8s namespace where Vault will be installed
-      namespace: hashicorp-vault
+      namespace: hashicorp
       # whether to wait for the release to be deployed or not
       wait: true
       # the time to wait for any individual Kubernetes operation (like Jobs for hooks). This defaults to 5m0s
