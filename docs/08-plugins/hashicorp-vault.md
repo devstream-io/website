@@ -50,9 +50,8 @@ tools:
 
 ## Initialize all the Vault pods
 
-After you have installed the Vault on k8s, let's initialize all pods of the Vault on k8s. Before that, if you want to know more about the Vault, you can refer to:
+After installing the Vault on k8s, you can initialize all pods of the Vault on k8s. To know more about the Vault, you can refer to:
 
-If you want to know more about seal/unseal/initialize, you can refer to these documents:
 - [Vault init](https://www.vaultproject.io/docs/commands/operator/init)
 - [Vault:Seal/Unseal](https://www.vaultproject.io/docs/concepts/seal)
 
@@ -63,22 +62,22 @@ In the command below, the variable `$NAMESPACE` you should replace with "hashico
 Otherwise, use the namespace name you replaced.
 
 1. Initialize vault-0
-```
+```shell
 # Initialize vault-0 with one key share and one key threshold.
 kubectl exec vault-0 -n $NAMESPACE -- vault operator init -key-shares=1 -key-threshold=1 -format=json > cluster-keys.json
 ```
 2. Display the unseal key
-```
+```shell
 # Display the unseal key found in cluster-keys.json
 cat cluster-keys.json | jq -r ".unseal_keys_b64[]"
 ```
 3. Create a variable to capture the Vault unseal key
-```
+```shell
 # Create a variable named VAULT_UNSEAL_KEY to capture the Vault unseal key.
 VAULT_UNSEAL_KEY=$(cat cluster-keys.json | jq -r ".unseal_keys_b64[]")
 ```
 4. Unseal vault-0
-```
+```shell
 # Unseal vault-0 running on the vault-0 pod.
 kubectl exec vault-0  -n $NAMESPACE -- vault operator unseal $VAULT_UNSEAL_KEY
 ```
@@ -117,13 +116,13 @@ kubectl exec vault-1  -n $NAMESPACE -- vault operator unseal $VAULT_UNSEAL_KEY
 ```
 
 6. Verify all the pods status
-```
+```shell
 # Verify all the Vault pods are running and ready.
 kubectl get pods -n $NAMESPACE
 ```
 
 You will see the above command's outputs like this below. Make sure all the pods are running and ready.
-```
+```shell
 NAME                                 READY   STATUS    RESTARTS   AGE
 vault-0                              1/1     Running   0          2m29s
 vault-1                              1/1     Running   0          2m29s
@@ -132,5 +131,5 @@ vault-agent-injector-68dc986-bnsj2   1/1     Running   0          2m28s
 ```
 
 7. After the above operations, you want to use the Vault to write/read secrets. You need to follow the documentation of the hashicorp Vault:
-    - [Set a secret in Vault](https://learn.hashicorp.com/tutorials/vault/kubernetes-minikube?in=vault/kubernetes#set-a-secret-in-vault)
-    - [Your First Secret](https://learn.hashicorp.com/tutorials/vault/getting-started-first-secret)
+- [Set a secret in Vault](https://learn.hashicorp.com/tutorials/vault/kubernetes-minikube?in=vault/kubernetes#set-a-secret-in-vault)
+- [Your First Secret](https://learn.hashicorp.com/tutorials/vault/getting-started-first-secret)
