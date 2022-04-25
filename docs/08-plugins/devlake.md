@@ -8,11 +8,12 @@ Note that this isn't a production-ready installation; it's only meant as an alte
 
 ```yaml
 tools:
+# name of the tool
 - name: devlake
-  # name of the plugin
-  plugin: devlake
-  # if specified, dtm will make sure the dependency is applied first before handling this tool.
-  dependsOn: [ "TOOL1_NAME.TOOL1_PLUGIN", "TOOL2_NAME.TOOL2_PLUGIN" ]
+  # id of the tool instance
+  instanceID: default
+  # format: name.instanceID; If specified, dtm will make sure the dependency is applied first before handling this tool.
+  dependsOn: []`
 ```
 
 All the parameters in the example above are mandatory.
