@@ -1,4 +1,4 @@
-                                                     # hashicorp-vault Plugin
+# hashicorp-vault Plugin
 
 This plugin installs [hashicorp-vault](https://www.vaultproject.io/) in an existing Kubernetes cluster using the Helm chart for your tests or develops hashicorp-vault.
 
