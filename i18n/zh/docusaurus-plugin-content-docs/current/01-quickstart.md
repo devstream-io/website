@@ -2,27 +2,27 @@
 sidebar_position: 1
 ---
 
-# Quick Start
+# 快速开始
 
-## 1 Download DevStream (`dtm`)
+## 1 下载 DevStream (`dtm`)
 
-Download the appropriate `dtm` version for your platform from [DevStream Releases](https://github.com/devstream-io/devstream/releases).
+根据你的实际环境从 [DevStream Releases](https://github.com/devstream-io/devstream/releases) 下载合适的 dtm 版本。
 
-> Remember to rename the binary file to `dtm` so that it's easier to use. For example: `mv dtm-darwin-arm64 dtm`.
+> 记得将二进制文件重命名为 dtm，这样用起来更简单。比如：mv dtm-darwin-arm64 dtm。
 
-> Once downloaded, you can run the binary from anywhere. Ideally, you want to put it in a place that is in your PATH (e.g., `/usr/local/bin`).
+> 一旦下载完成，你就可以将 dtm 文件放到任何目录下运行了。当然更加建议你将 dtm 加到 PATH 下(比如 /usr/local/bin)。
 
-## 2 Prepare a Config File
+## 2 准备一个配置文件
 
-Copy the [examples/quickstart.yaml](https://github.com/devstream-io/devstream/blob/main/examples/quickstart.yaml) to your working directory and rename it to `config.yaml`:
+将 [examples/quickstart.yaml](https://github.com/devstream-io/devstream/blob/main/examples/quickstart.yaml) 文件拷贝到你到工作目录下，然后重命名成 config.yaml：
 
 ```bash
-curl -o config.yaml https://raw.githubusercontent.com/devstream-io/devstream/main/examples/quickstart.yaml
+cp examples/quickstart.yaml config.yaml
 ```
 
-Then modify the file accordingly.
+然后相应的修改配置文件中的内容。
 
-For example, my GitHub username is "IronCore864", and my Dockerhub username is "ironcore864", then I can run:
+比如我的 GitHub 用户名是 "IronCore864", 然后我的 Dockerhub 用户名是 "ironcore864"，这样我就可以运行：
 
 ```bash
 sed -i.bak "s/YOUR_GITHUB_USERNAME_CASE_SENSITIVE/IronCore864/g" config.yaml
@@ -30,25 +30,25 @@ sed -i.bak "s/YOUR_GITHUB_USERNAME_CASE_SENSITIVE/IronCore864/g" config.yaml
 sed -i.bak "s/YOUR_DOCKER_USERNAME/ironcore864/g" config.yaml
 ```
 
-> This config file uses two plugins, one will create a GitHub repository and bootstrap it into a Golang web app, and the other will create GitHub Actions workflow for it.
+> 这个配置文件会使用两个插件，一个用来创建 GitHub 项目，而且初始化成一个 Golang 的 web 应用结构。接着另外一个插件会给这个项目创建对应的 GitHub Actions 工作流。
 
-The two plugins [require an environment variable](plugins/github-repo-scaffolding-golang) to work, so let's set it:
+这两个插件 [需要配置一个环境变量](plugins/github-repo-scaffolding-golang) 才能工作，我们看下怎么配置：
 
 ```bash
 export GITHUB_TOKEN="YOUR_GITHUB_TOKEN_HERE"
 ```
 
-If you don't know how to create a GitHub token, check out [the official document here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+如果你不知道怎么创建一个 GitHub token 可以看下[官方文档](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
-## 3 Initialize
+## 3 I初始化
 
-Run:
+运行：
 
 ```bash
 dtm init -f config.yaml
 ```
 
-and you should see similar output to:
+然后你可以看到类似这样的日志输出：
 
 ```
 2022-03-04 12:08:06 ℹ [INFO]  Initialize started.
@@ -62,19 +62,19 @@ and you should see similar output to:
 2022-03-04 12:08:20 ✔ [SUCCESS]  Initialize finished.
 ```
 
-This step verifies the MD5 sum of your dtm binary, downloads the required plugins according to the config file, and verifies the plugins' MD5 sums as well.
+此步骤验证您的 dtm 二进制文件的 MD5 sum，根据配置文件下载所需的插件，并验证插件的 MD5 sum。
 
-Note: if your dtm binary's MD5 sum doesn't match the MD5 sum from our release page, dtm init will stop. If your local dtm MD5 differs, it indicates that you built the binary yourself (for developing purposes, for example). Due to the nature of the Go plugin, dtm must be built together with the corresponding plugins. So, if you are building dtm, you should also build the plugins as well, in which case, you do not need to run dtm init to download the plugins.
+注意：如果您的 dtm 二进制文件的 MD5 sum 与我们发布页面中的 MD5 sum 不匹配，dtm init 将停止。 如果您的本地 dtm MD5 不同，则表明您自己构建了二进制文件（例如，出于开发目的）。 由于 Go 插件的性质，dtm 必须与相应的插件一起构建。 所以，如果你正在构建 dtm，你也应该构建插件，在这种情况下，你不需要运行 dtm init 来下载插件。
 
-## 4 Apply
+## 4 开始执行
 
-Run:
+运行：
 
 ```bash
 dtm apply -f config.yaml
 ```
 
-and confirm to continue, then you should see similar output to:
+然后输入 y 来确认继续执行命令，接着你可以看到类似这样的日志输出：
 
 ```
 2022-03-04 12:08:54 ℹ [INFO]  Apply started.
@@ -101,19 +101,19 @@ Enter a value (Default is n): y
 2022-03-04 12:09:26 ✔ [SUCCESS]  All plugins applied successfully.
 2022-03-04 12:09:26 ✔ [SUCCESS]  Apply finished.
 ```
-## 5 Check the Results
+## 5 检查结果
 
-Go to your GitHub account, and we can see a new repo named "go-webapp-devstream-demo" has been created; there are some Golang web app scaffolding lying around already, and the GitHub Actions for building the app is also ready. Hooray!
+登录你自己的 GitHub 账户，然后你可以看到一个新的名字叫做 "go-webapp-devstream-demo" 的项目已经被创建出来了， 而且里面已经有了一些 Golang 的 web 应用脚手架代码。另外你还可以看到用于构建这个应用的一些 GitHub Actions 也已经被配置好了。酷吧？
 
-## 6 Clean Up
+## 6 清理
 
-Run:
+运行：
 
 ```bash
 dtm destroy
 ```
 
-and you should see similar output:
+然后你可以看到类似这样的日志：
 
 ```
 2022-03-04 12:10:36 ℹ [INFO]  Destroy started.
