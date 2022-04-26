@@ -1,3 +1,3 @@
-# gitlabci-golang Plugin
+# gitlabci-golang 插件
 
 ### （本文暂未翻译，请查看英文版）
