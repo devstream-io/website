@@ -10,6 +10,7 @@ sidebar_position: 1
 | Issue Tracking                 | trello                         | Trello                         | [doc](trello)                         |
 | Issue Tracking                 | jira-github-integ              | Jira/GitHub integration        | [doc](jira-github-integ)              |
 | Source Code Management         | github-repo-scaffolding-golang | Go WebApp scaffolding          | [doc](github-repo-scaffolding-golang) |
+| Source Code Management         | gitlab-repo-scaffolding-golang | Go WebApp scaffolding          | [doc](gitlab-repo-scaffolding-golang) |
 | CI                             | jenkins                        | Jenkins installation           | [doc](jenkins)                        |
 | CI                             | githubactions-golang           | GitHub Actions CI for Golang   | [doc](githubactions-golang)           |
 | CI                             | githubactions-python           | GitHub Actions CI for Python   | [doc](githubactions-python)           |
@@ -34,6 +35,7 @@ github-repo-scaffolding-golang
 githubactions-golang
 githubactions-nodejs
 githubactions-python
+gitlab-repo-scaffolding-golang
 gitlabci-generic
 gitlabci-golang
 hashicorp-vault

@@ -15,7 +15,7 @@ If you don't know how to create this token, check out:
 
 *1. If you run `dtm delete`, the repo on GitHub will be completely removed.*
 
-*2. If the `Update` interface is called, the repo on github will be completely removed and recreated. However, given our current implementation, this interface shall not be called, as of in v0.2.0.*
+*2. If the `Update` interface is called, the repo on GitHub will be completely removed and recreated. However, given our current implementation, this interface shall not be called, as of in v0.2.0.*
 
 ## Usage
 
@@ -53,7 +53,7 @@ Replace the following from the config above:
 
 The "branch" in the example above is "main", but you can adjust accordingly.
 
-Currently, all the parameters in the example above are mandatory.
+You have to specify either "owner" or "org".
 
 ## Outputs
 
