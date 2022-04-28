@@ -31,8 +31,8 @@ const config = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/devstream-io/website/tree/main/',
+          editUrl: 'https://github.com/devstream-io/website/tree/main/',
+          archiveBasePath: 'archive',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -91,6 +91,8 @@ const config = {
             docsPluginId: 'community'
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog/archive', label: 'Archive', position: 'left'},
+          {to: '/blog/tags', label: 'Tags', position: 'left'},
           {
             href: 'https://medium.com/devstream',
             position: 'left',

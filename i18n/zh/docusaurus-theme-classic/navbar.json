@@ -15,6 +15,14 @@
     "message": "博客",
     "description": "Navbar item with label Blog"
   },
+  "item.label.Archive": {
+    "message": "归档",
+    "description": "Navbar item with label Archive"
+  },
+  "item.label.Tags": {
+    "message": "博客标签分类",
+    "description": "Navbar item with label Tags"
+  },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
