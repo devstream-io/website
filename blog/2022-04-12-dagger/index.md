@@ -44,6 +44,9 @@ What's the purpose of using another language just for the configuration?
 
 Solomon Hykes, the founder of Dagger, actually answered exact this question on their official Discord channel:
 
+<!--truncate-->
+
+
 > We needed a modern declarative language with a type system, a package manager, native yaml and json interop, a formal spec, and a standalone community not locked to one tool.
 >
 > Also Dockerfiles are specific to build, but Dagger is more general-purpose automation

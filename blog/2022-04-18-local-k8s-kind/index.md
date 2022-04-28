@@ -30,6 +30,9 @@ In this article, we are going with `kind`. We are not opinionated; we are not sa
 
 This article uses macOS as our local development environment. If you are using Windows or Linux, you can still read this post to get a general idea and achieve the same.
 
+<!--truncate-->
+
+
 ---
 
 ## Install Docker
