@@ -17,6 +17,7 @@ Do you want the long answer to this million-dollar question? It's hard to answer
 But, in fact, Dagger is neither of those things.
 
 Before we can answer what Dagger is, let's have a look at it in-depth:
+<!--truncate-->
 
 ## 2 Quirks and Features
 
@@ -43,9 +44,6 @@ Since it's already reusing Docker's parts for configuration execution, why not r
 What's the purpose of using another language just for the configuration?
 
 Solomon Hykes, the founder of Dagger, actually answered exact this question on their official Discord channel:
-
-<!--truncate-->
-
 
 > We needed a modern declarative language with a type system, a package manager, native yaml and json interop, a formal spec, and a standalone community not locked to one tool.
 >

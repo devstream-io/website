@@ -10,6 +10,8 @@ tags: [minikube, Kubernetes]
 
 What’s up guys, this is Daniel! Yeah, this English blog is WRITTEN by me, not TRANSLATED by me! It’s my first English blog in my whole life. If you are a Chinese reader, maybe you’ve ever seen my Chinese blogs before. Right, I wrote a lot of blogs, but only in Chinese. Believe it or not, English isn’t my strong suit. But I want to have a try today and I’ll do my best. Let’s get started.
 
+<!--truncate-->
+
 ## What We Will Talk about Today
 
 If you ask me how to create a local Kubernetes cluster, I'll tell you [Kind](https://kind.sigs.k8s.io), [minikube](https://minikube.sigs.k8s.io/docs/), and [Kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) are all good choices. If you ask me which tool is the most recommended for beginners, my answer must be `minikube` or `Kind`. `minikube` is more powerful than `Kind`, and `Kind` is easier than `minikube`.
@@ -23,8 +25,6 @@ You might ask why that article is written by [Tiexin Guo](https://github.com/Iro
 - [从零开始快速搭建本地 Kubernetes 测试环节](https://www.devstream.io/zh/blog/local-k8s-with-kind)
 
 Both `minikube` and `Kind` are the most well-known and popular choices to run a Kubernetes environment on a local computer. Since I've shown you how to use `Kind`, I might as well introduce `minikube` to youadorable today.
-
-<!--truncate-->
 
 
 ## Quick Start with `minikube`

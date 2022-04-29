@@ -15,6 +15,7 @@ Before you quickly glance over the title and think "Oh god, yet another tutorial
 This "best practices" article aims to tell you something you haven't read a hundred times. This article won't give you the answer to everything because there isn't one right answer that fits all. This article aims to make you think about your unique situation and make the best decisions by you and for you.
 
 Without further adieu, let's start with writing Terraform code:
+<!--truncate-->
 
 ---
 
@@ -27,9 +28,6 @@ For example, for old Terraform users from 0.12 or even earlier age, you might re
 Once you have accepted the quirks and features, you can utilize a bunch of best practices to organize your code and to use it better. Even though Terraform isn't strictly a programming language, similar rules of writing code apply to Terraform as well.
 
 But before we talk about Terraform code, let's have a quick look at coding or programming in general.
-
-<!--truncate-->
-
 
 ### 1.1 On "Code"
 
