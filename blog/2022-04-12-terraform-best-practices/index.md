@@ -28,6 +28,9 @@ Once you have accepted the quirks and features, you can utilize a bunch of best 
 
 But before we talk about Terraform code, let's have a quick look at coding or programming in general.
 
+<!--truncate-->
+
+
 ### 1.1 On "Code"
 
 I want to start this conversation by quoting Knuth:

@@ -28,6 +28,9 @@ Not to brag, but with DevStream, you can have your own DevOps toolchain that is 
 
 Don't believe it? Check out our [docs](/docs/index) and follow the quickstart guide!
 
+<!--truncate-->
+
+
 ## Existing Plugins
 
 At the moment of publishing this article, we already support the following tools:

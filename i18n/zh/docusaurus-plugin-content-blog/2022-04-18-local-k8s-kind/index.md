@@ -38,6 +38,8 @@ Let's Get Started!
 
 我们把 Docker 图标拖到 Applications 里，稍等不到半分钟，就可以在“启动台”里看到 Docker 图标了，然后点击“启动台”里的 Docker 打开 Docker Desktop：
 
+<!--truncate-->
+
 ![docker logo](./c.png)
 
 稍等几秒钟，就可以看到启动页面了：

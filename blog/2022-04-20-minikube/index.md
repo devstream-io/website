@@ -24,6 +24,9 @@ You might ask why that article is written by [Tiexin Guo](https://github.com/Iro
 
 Both `minikube` and `Kind` are the most well-known and popular choices to run a Kubernetes environment on a local computer. Since I've shown you how to use `Kind`, I might as well introduce `minikube` to youadorable today.
 
+<!--truncate-->
+
+
 ## Quick Start with `minikube`
 
 `minikube` is a command-line tool like `Kind` that you can use to create and configure Kubernetes clusters locally on your computer. 

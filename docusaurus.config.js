@@ -31,8 +31,7 @@ const config = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/devstream-io/website/tree/main/',
+          editUrl: 'https://github.com/devstream-io/website/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
