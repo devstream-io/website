@@ -13,8 +13,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'devstream-io', // Usually your GitHub org/user name.
+  projectName: 'website', // Usually your repo name.
 
   presets: [
     [
@@ -32,6 +32,8 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl: 'https://github.com/devstream-io/website/tree/main/',
+          blogSidebarCount: 100,
+          blogSidebarTitle: 'All our blogs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
