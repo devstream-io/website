@@ -24,6 +24,8 @@ Let's Get Started!
 
 本文以 macOS 作为开发环境，使用 Linux 或者 Windows 系统作为开发环境的同学可以参考本文的方法，相应地做一些灵活调整。
 
+<!--truncate-->
+
 ## Docker 的安装
 
 在 Linux 下安装 Docker 是一件非常简单的事情，Docker 的核心原理就是基于 Linux 的 Namespace 和 Cgroup 等机制。不过在 macOS 和 Windows 下就需要通过虚拟化技术间接使用 Docker 了。当然我们现在已经不需要先安装虚拟化软件然后自己安装 Linux 虚拟机，再使用 Docker 了。我们可以直接在 docker.com 下载 Docker Desktop 来跑 Docker 程序。
@@ -37,8 +39,6 @@ Let's Get Started!
 ![docker install](./b.png)
 
 我们把 Docker 图标拖到 Applications 里，稍等不到半分钟，就可以在“启动台”里看到 Docker 图标了，然后点击“启动台”里的 Docker 打开 Docker Desktop：
-
-<!--truncate-->
 
 ![docker logo](./c.png)
 

@@ -12,6 +12,7 @@ tags: [Terraform, IaC, DevStream]
 
 From the ground up? Yep, from the ground up!
 
+<!--truncate-->
 ---
 
 ## Overview
@@ -29,9 +30,6 @@ Even for a local testing cluster, there are multiple tools you can choose from. 
 In this article, we are going with `kind`. We are not opinionated; we are not saying that `kind` is better than `minikube` or vice versa; we are merely choosing a tool to get the job done. If you are more familiar with other tools, it's completely fine!
 
 This article uses macOS as our local development environment. If you are using Windows or Linux, you can still read this post to get a general idea and achieve the same.
-
-<!--truncate-->
-
 
 ---
 

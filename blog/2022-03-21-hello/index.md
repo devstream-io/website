@@ -19,6 +19,7 @@ If you haven't heard of DevStream yet, please have a quick glance over our [READ
 
 Without further adieu, let's get started.
 
+<!--truncate-->
 ---
 
 ## TL;DR
@@ -30,8 +31,6 @@ Most of the time, I'm a "normal" end-user. And by "normal", I mean I don't bothe
 If you are like me, should you read this post anyway?
 
 Well, yes. Because although this article is about DevStream, it isn't. We will cover quite some topics that are non-specific to DevStream. We will discuss generic topics about [life, the universe, and everything](https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_to_the_Galaxy). Hang tight. Here we go.
-
-<!--truncate-->
 
 ---
 

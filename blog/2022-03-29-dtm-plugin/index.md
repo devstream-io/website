@@ -18,6 +18,7 @@ Yes, the title of this post isn't bluffing: you can actually create a plugin for
  
 In this blog, we will walk you through the steps of creating a DevStream plugin from scratch with an example. 
 
+<!--truncate-->
 ---
 
 ## What is DevStream
@@ -27,8 +28,6 @@ DevStream is an amazing tool that lets you install, update, manage, and integrat
 Not to brag, but with DevStream, you can have your own DevOps toolchain that is specifically tailored to your need up and running in 5 minutes.
 
 Don't believe it? Check out our [docs](/docs/index) and follow the quickstart guide!
-
-<!--truncate-->
 
 
 ## Existing Plugins
