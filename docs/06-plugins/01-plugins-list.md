@@ -23,6 +23,7 @@ sidebar_position: 1
 | Observability                  | devlake                        | DevLake installation           | [doc](devlake)                        |
 | LDAP                           | openldap                       | OpenLDAP installation          | [doc](openldap)                       |
 | Secrets/Credentials Management | hashicorp-vault                | Hashicorp Vault installation   | [doc](hashicorp-vault)                |
+| Application Management         | helm-generic                   | Generic/private helm chart     | [doc](helm-generic)                   |
 
 Or, to get a list of plugins, run:
 
