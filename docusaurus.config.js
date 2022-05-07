@@ -91,7 +91,7 @@ const config = {
             label: 'Community',
             docsPluginId: 'community'
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {href: 'https://blog.devstream.io', label: 'Blog', position: 'left'},
           {
             href: 'https://medium.com/devstream',
             position: 'left',
