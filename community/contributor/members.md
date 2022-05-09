@@ -50,3 +50,7 @@ The Mugs are given to our members as a present. Here're a few of their personal 
 ---
 
 ![ysm-cup](/img/community/contributor/members/ysm-cup.jpg)
+
+---
+
+![xw-cup](/img/community/contributor/members/xw-cup.jpg)
