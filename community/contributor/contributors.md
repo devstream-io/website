@@ -4,6 +4,16 @@ sidebar_position: 1
 
 # DevStream Contributors
 
+## New Contributors in 2022 May
+
+After a vote within DevStream PMC, we've decided to invite Xuecheng Hou to be a Contributor of DevStream community!
+
+### Xuecheng Hou
+
+---
+
+![houxuecheng](/img/community/contributor/contributors/houxuecheng.png)
+
 ## New Contributors in 2022 Mar
 
 After a vote within DevStream PMC, we've decided to invite Wu Xu, Suming Yu, Yingchu Chen, and Kaitian Xie to be contributors of DevStream community!
