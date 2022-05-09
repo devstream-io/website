@@ -51,3 +51,7 @@ sidebar_position: 2
 ---
 
 ![ysm-cup](/img/community/contributor/members/ysm-cup.jpg)
+
+---
+
+![xw-cup](/img/community/contributor/members/xw-cup.jpg)
