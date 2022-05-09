@@ -29,9 +29,10 @@ Download the appropriate `dtm` version for your platform from [DevStream Release
 ## Prepare the Config File
 
 Copy the
-[gitops.yaml](https://github.com/devstream-io/devstream/blob/main/examples/gitops.yaml)
-[tools-gitops.yaml](https://github.com/devstream-io/devstream/blob/main/examples/tools-gitops.yaml)
-[variables-gitops.yaml](https://github.com/devstream-io/devstream/blob/main/examples/variables-gitops.yaml)
+- [gitops.yaml](https://github.com/devstream-io/devstream/blob/main/examples/gitops.yaml)
+- [tools-gitops.yaml](https://github.com/devstream-io/devstream/blob/main/examples/tools-gitops.yaml)
+- [variables-gitops.yaml](https://github.com/devstream-io/devstream/blob/main/examples/variables-gitops.yaml)
+
 to your working directory:
 
 ```bash
