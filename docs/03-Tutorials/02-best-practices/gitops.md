@@ -28,14 +28,19 @@ Download the appropriate `dtm` version for your platform from [DevStream Release
 
 ## Prepare the Config File
 
-Copy the [gitops.yaml](https://github.com/devstream-io/devstream/blob/main/examples/gitops.yaml) and [gitops-variables.yaml](https://github.com/devstream-io/devstream/blob/main/examples/gitops-variables.yaml) to your working directory:
+Copy the
+[gitops.yaml](https://github.com/devstream-io/devstream/blob/main/examples/gitops.yaml)
+[tools-gitops.yaml](https://github.com/devstream-io/devstream/blob/main/examples/tools-gitops.yaml)
+[variables-gitops.yaml](https://github.com/devstream-io/devstream/blob/main/examples/variables-gitops.yaml)
+to your working directory:
 
 ```bash
 curl -o config-gitops.yaml https://raw.githubusercontent.com/devstream-io/devstream/main/examples/gitops.yaml
-curl -o config-gitops-variables.yaml https://raw.githubusercontent.com/devstream-io/devstream/main/examples/gitops-variables.yaml
+curl -o tools-gitops.yaml https://raw.githubusercontent.com/devstream-io/devstream/main/examples/tools-gitops.yaml
+curl -o variables-gitops.yaml https://raw.githubusercontent.com/devstream-io/devstream/main/examples/variables-gitops.yaml
 ```
 
-Then modify the `config-gitops-variables.yaml` file accordingly.
+Then modify the `variables-gitops.yaml` file accordingly.
 
 For me I can set these variables like:
 
@@ -69,7 +74,7 @@ If you don't know how to create these two tokens, check out:
 Run:
 
 ```bash
-dtm init -f config-gitops.yaml --var-file=config-gitops-variables.yaml
+dtm init -f config-gitops.yaml
 ```
 
 ## 4. Apply
@@ -77,7 +82,7 @@ dtm init -f config-gitops.yaml --var-file=config-gitops-variables.yaml
 Run:
 
 ```bash
-dtm apply -f config-gitops.yaml --var-file=config-gitops-variables.yaml
+dtm apply -f config-gitops.yaml
 ```
 
 and confirm to continue, then you should see similar output to:

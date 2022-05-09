@@ -14,10 +14,11 @@ Download the appropriate `dtm` version for your platform from [DevStream Release
 
 ## 2 Prepare a Config File
 
-Copy the [examples/quickstart.yaml](https://github.com/devstream-io/devstream/blob/main/examples/quickstart.yaml) to your working directory and rename it to `config.yaml`:
+Copy the [examples/quickstart.yaml](https://github.com/devstream-io/devstream/blob/main/examples/quickstart.yaml) and [examples/tools-quickstart.yaml](https://github.com/devstream-io/devstream/blob/main/examples/tools-quickstart.yaml) to your working directory and rename `quickstart.yaml` to `config.yaml`:
 
 ```bash
 curl -o config.yaml https://raw.githubusercontent.com/devstream-io/devstream/main/examples/quickstart.yaml
+curl -o tools-quickstart.yaml https://raw.githubusercontent.com/devstream-io/devstream/main/examples/tools-quickstart.yaml
 ```
 
 Then modify the file accordingly.
@@ -25,9 +26,9 @@ Then modify the file accordingly.
 For example, my GitHub username is "IronCore864", and my Dockerhub username is "ironcore864", then I can run:
 
 ```bash
-sed -i.bak "s/YOUR_GITHUB_USERNAME_CASE_SENSITIVE/IronCore864/g" config.yaml
+sed -i.bak "s/YOUR_GITHUB_USERNAME_CASE_SENSITIVE/IronCore864/g" tools-quickstart.yaml
 
-sed -i.bak "s/YOUR_DOCKER_USERNAME/ironcore864/g" config.yaml
+sed -i.bak "s/YOUR_DOCKER_USERNAME/ironcore864/g" tools-quickstart.yaml
 ```
 
 > This config file uses two plugins, one will create a GitHub repository and bootstrap it into a Golang web app, and the other will create GitHub Actions workflow for it.
