@@ -42,18 +42,6 @@ const config = {
     ],
   ],
 
-  plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'community',
-        path: 'community',
-        routeBasePath: 'community',
-        sidebarPath: require.resolve('./sidebarsCommunity.js'),
-      },
-    ],
-  ],
-
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'zh'],
@@ -79,8 +67,7 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'index',
+            href: 'https://docs.devstream.io',
             position: 'left',
             label: 'Docs',
           },
@@ -88,8 +75,7 @@ const config = {
             type: 'doc',
             docId: 'index',
             position: 'left',
-            label: 'Community',
-            docsPluginId: 'community'
+            label: 'Community'
           },
           {href: 'https://blog.devstream.io', label: 'Blog', position: 'left'},
           {
