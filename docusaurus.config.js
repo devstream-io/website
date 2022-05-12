@@ -107,7 +107,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/index',
+                href: 'https://docs.devstream.io',
               },
             ],
           },
@@ -125,7 +125,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                href: 'https://blog.devstream.io',
               },
               {
                 label: 'GitHub',
