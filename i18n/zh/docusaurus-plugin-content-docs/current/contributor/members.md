@@ -55,3 +55,7 @@ sidebar_position: 2
 ---
 
 ![xw-cup](/img/community/contributor/members/xw-cup.jpg)
+
+---
+
+![xkt-cup](/img/community/contributor/members/xkt-cup.jpeg)
