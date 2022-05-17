@@ -21,13 +21,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          path: 'docs',
-          routeBasePath: 'docs',
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/devstream-io/website/tree/main/',
-        },
+        docs: false, // disable the docs plugin
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -39,6 +33,18 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        sidebarPath: require.resolve('./sidebarsCommunity.js'),
+      },
     ],
   ],
 
@@ -75,9 +81,14 @@ const config = {
             type: 'doc',
             docId: 'index',
             position: 'left',
-            label: 'Community'
+            label: 'Community',
+            docsPluginId: 'community'
           },
-          {href: 'https://blog.devstream.io', label: 'Blog', position: 'left'},
+          {
+            href: 'https://blog.devstream.io',
+            label: 'Blog',
+            position: 'left'
+          },
           {
             href: 'https://medium.com/devstream',
             position: 'left',
@@ -91,7 +102,7 @@ const config = {
           {
             href: 'https://github.com/devstream-io/devstream',
             label: 'GitHub',
-            position: 'right',
+            position: 'left',
           },
           {
             type: 'localeDropdown',
