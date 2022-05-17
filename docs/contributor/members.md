@@ -54,3 +54,7 @@ The Mugs are given to our members as a present. Here're a few of their personal 
 ---
 
 ![xw-cup](/img/community/contributor/members/xw-cup.jpg)
+
+---
+
+![xkt-cup](/img/community/contributor/members/xkt-cup.jpeg)
