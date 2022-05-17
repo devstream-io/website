@@ -69,7 +69,7 @@ const config = {
         title: 'DevStream',
         logo: {
           alt: 'DevStream Logo',
-          src: 'img/logo-120px.jpg',
+          src: 'img/logo-120px.png',
         },
         items: [
           {
