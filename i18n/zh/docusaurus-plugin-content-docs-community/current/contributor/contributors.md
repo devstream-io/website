@@ -44,7 +44,7 @@ sidebar_position: 1
 
 ---
 
-![liujunyu](/img/community/contributor/contributors/liuyunyu.png)
+![liujunyu](/img/community/contributor/contributors/liujunyu.png)
 
 ## 2022 年 3 月新晋贡献者
 

@@ -42,7 +42,7 @@ After a vote within DevStream PMC, we've decided to invite Xuecheng Hou, Ran Wei
 
 ---
 
-![liujunyu](/img/community/contributor/contributors/liuyunyu.png)
+![liujunyu](/img/community/contributor/contributors/liujunyu.png)
 
 ## New Contributors in 2022 Mar
 
