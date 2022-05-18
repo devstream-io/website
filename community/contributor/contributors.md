@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## New Contributors in 2022 May
 
-After a vote within DevStream PMC, we've decided to invite Xuecheng Hou, Ran Wei, Liangyu Xiao, Ziyu Wang and Hepeng Li to be Contributors of DevStream community!
+After a vote within DevStream PMC, we've decided to invite Xuecheng Hou, Ran Wei, Liangyu Xiao, Ziyu Wang, Hepeng Li and Junyu Liu to be Contributors of DevStream community!
 
 ### Xuecheng Hou
 
@@ -38,6 +38,11 @@ After a vote within DevStream PMC, we've decided to invite Xuecheng Hou, Ran Wei
 
 ![lihepeng](/img/community/contributor/contributors/lihepeng.png)
 
+### Junyu Liu
+
+---
+
+![liujunyu](/img/community/contributor/contributors/liuyunyu.png)
 
 ## New Contributors in 2022 Mar
 
