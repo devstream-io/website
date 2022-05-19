@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## 2022 年 5 月新晋贡献者
 
-经过 DevStream PMC 内部投票表决，我们决定邀请侯雪城、魏冉、肖良玉、王子聿、李鹤鹏和刘俊余六位贡献者成为 Contributor！
+经过 DevStream PMC 内部投票表决，我们决定邀请侯雪城、魏冉、肖良玉、王子聿、李鹤鹏、刘俊余和宋盾宇七位贡献者成为 Contributor！
 
 ---
 
@@ -45,6 +45,12 @@ sidebar_position: 1
 ---
 
 ![liujunyu](/img/community/contributor/contributors/liujunyu.png)
+
+### 宋盾宇
+
+---
+
+![songdunyu](/img/community/contributor/contributors/songdunyu.png)
 
 ## 2022 年 3 月新晋贡献者
 
