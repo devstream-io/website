@@ -5,7 +5,6 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Flexible',
-    // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
       Svg: require('@site/static/img/Flexible.svg').default,
       description: (
       <>
@@ -15,7 +14,6 @@ const FeatureList = [
   },
   {
     title: 'Fast',
-    // Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
       Svg: require('@site/static/img/Fast.svg').default,
       description: (
       <>
