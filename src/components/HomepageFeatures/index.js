@@ -5,8 +5,9 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Flexible',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
+    // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+      Svg: require('@site/static/img/Flexible.svg').default,
+      description: (
       <>
         Define your tools as code.
       </>
@@ -14,8 +15,9 @@ const FeatureList = [
   },
   {
     title: 'Fast',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
+    // Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+      Svg: require('@site/static/img/Fast.svg').default,
+      description: (
       <>
         Five Minutes. One Command.
       </>
@@ -23,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Contribute',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/Contribute.svg').default,
     description: (
       <>
         Pull Requests are welcome!
