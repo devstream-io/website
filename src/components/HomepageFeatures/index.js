@@ -5,8 +5,8 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Flexible',
-      Svg: require('@site/static/img/Flexible.svg').default,
-      description: (
+    Svg: require('@site/static/img/Flexible.svg').default,
+    description: (
       <>
         Define your tools as code.
       </>
@@ -14,8 +14,8 @@ const FeatureList = [
   },
   {
     title: 'Fast',
-      Svg: require('@site/static/img/Fast.svg').default,
-      description: (
+    Svg: require('@site/static/img/Fast.svg').default,
+    description: (
       <>
         Five Minutes. One Command.
       </>
