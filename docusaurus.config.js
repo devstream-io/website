@@ -105,6 +105,11 @@ const config = {
             position: 'left',
           },
           {
+            href: 'https://space.bilibili.com/1737999178',
+            label: 'Video',
+            position: 'left',
+          },
+          {
             type: 'localeDropdown',
             position: 'right',
           },
