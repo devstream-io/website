@@ -8,25 +8,25 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Define your tools as code.
+        Choose the DevOps tools that suit YOUR need the most.
       </>
     ),
   },
   {
-    title: 'Fast',
+    title: 'Of developers. For developers. By Developers.',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Five Minutes. One Command.
+         Define your DevOps platform as code and have the whole toolchain up and running in 5 minutes.
       </>
     ),
   },
   {
-    title: 'Contribute',
+    title: 'Cloud Native',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Pull Requests are welcome!
+        Aiming to be cloud native right from the beginning. Already in the CNCF landscape.
       </>
     ),
   },
