@@ -105,7 +105,7 @@ const config = {
             position: 'left',
           },
           {
-            href: 'https://space.bilibili.com/1737999178',
+            href: 'https://space.bilibili.com/1737999178/video',
             label: 'Video',
             position: 'left',
           },
