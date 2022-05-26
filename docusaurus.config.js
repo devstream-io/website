@@ -145,7 +145,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} DevStream@Merico Inc, Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} DevStream@Merico Inc.`,
       },
       prism: {
         theme: lightCodeTheme,

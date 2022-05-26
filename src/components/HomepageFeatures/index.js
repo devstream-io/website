@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Flexible',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/Flexible.svg').default,
     description: (
       <>
         Choose the DevOps tools that suit YOUR need the most.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Of developers. For developers. By Developers.',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/Fast.svg').default,
     description: (
       <>
          Define your DevOps platform as code and have the whole toolchain up and running in 5 minutes.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Cloud Native',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/Contribute.svg').default,
     description: (
       <>
         Aiming to be cloud native right from the beginning. Already in the CNCF landscape.
