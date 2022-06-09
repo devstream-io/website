@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'devstream-io', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
 
@@ -69,7 +69,7 @@ const config = {
         title: 'DevStream',
         logo: {
           alt: 'DevStream Logo',
-          src: 'img/logo-120px.png',
+          src: 'img/logo-1024.png',
         },
         items: [
           {
