@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## 2022 年 5 月新晋贡献者
 
-经过 DevStream PMC 内部投票表决，我们决定邀请侯雪城、魏冉、肖良玉、王子聿、李鹤鹏、刘俊余、宋盾宇、Shubham Gupta、杨成林、李耀宗、罗卫平、盛杰和陈飞等 13 位贡献者成为 Contributor！
+经过 DevStream PMC 内部投票表决，我们决定邀请侯雪城、魏冉、肖良玉、王子聿、李鹤鹏、刘俊余、宋盾宇、Shubham Gupta、杨成林、李耀宗、罗卫平、盛杰、陈飞、饶小力和刘登鹏等 15 位贡献者成为 Contributor！
 
 ---
 
@@ -87,6 +87,18 @@ sidebar_position: 1
 ---
 
 ![chenfei](/img/community/contributor/contributors/chenfei.png)
+
+### 饶小力
+
+---
+
+![raoxiaoli](/img/community/contributor/contributors/raoxiaoli.png)
+
+### 刘登鹏
+
+---
+
+![liudengpeng](/img/community/contributor/contributors/liudengpeng.png)
 
 
 ## 2022 年 3 月新晋贡献者
