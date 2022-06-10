@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## New Contributors in 2022 May
 
-After a vote within DevStream PMC, we've decided to invite Xuecheng Hou, Ran Wei, Liangyu Xiao, Ziyu Wang, Hepeng Li, Junyu Liu, Dunyu Song, Shubham Gupta, Chenglin Yang, Yaozong Li, Weiping Luo, Jie Sheng, Fei Chen, Xiaoli Rao and Dengpeng Liu to be Contributors of DevStream community!
+After a vote within DevStream PMC, we've decided to invite Xuecheng Hou, Ran Wei, Liangyu Xiao, Ziyu Wang, Hepeng Li, Junyu Liu, Dunyu Song, Shubham Gupta, Chenglin Yang, Yaozong Li, Weiping Luo, Jie Sheng, Fei Chen, Dengpeng Liu and Xiaoli Rao to be Contributors of DevStream community!
 
 ### Xuecheng Hou
 
@@ -86,17 +86,17 @@ After a vote within DevStream PMC, we've decided to invite Xuecheng Hou, Ran Wei
 
 ![chenfei](/img/community/contributor/contributors/chenfei.png)
 
-### Xiaoli Rao
-
----
-
-![raoxiaoli](/img/community/contributor/contributors/raoxiaoli.png)
-
 ### Dengpeng Liu
 
 ---
 
 ![liudengpeng](/img/community/contributor/contributors/liudengpeng.png)
+
+### Xiaoli Rao
+
+---
+
+![raoxiaoli](/img/community/contributor/contributors/raoxiaoli.png)
 
 ## New Contributors in 2022 Mar
 
