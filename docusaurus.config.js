@@ -95,18 +95,8 @@ const config = {
             label: 'Medium',
           },
           {
-            href: 'https://dev.to/devstream',
-            position: 'left',
-            label: 'Dev.to',
-          },
-          {
             href: 'https://github.com/devstream-io/devstream',
             label: 'GitHub',
-            position: 'left',
-          },
-          {
-            href: 'https://space.bilibili.com/1737999178/video',
-            label: 'Video',
             position: 'left',
           },
           {
