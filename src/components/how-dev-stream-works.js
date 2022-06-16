@@ -15,9 +15,13 @@ const AdvantageList = [
   },
   {
     title: 'Best Practice Inheritance',
-    desc:
-      'Import toolchain configuration that meets your needs. \n' +
-      'Implement inbuilt best practices and share yours with the world.',
+    desc: (
+      <>
+        Import toolchain configuration that meets your needs.
+        <br />
+        Implement inbuilt best practices and share yours with the world.
+      </>
+    ),
   },
 ];
 
@@ -25,29 +29,56 @@ export const HowDevStreamWorks = () => {
   return (
     <section className="bg-white py-6 flex flex-col flex-nowrap justify-start items-center">
       <h3 className="section-title">How DevStream Works</h3>
-      <ArchitectureSvg className="mx-4 sm:mx-6" />
-      <div className="flex flex-col gap-3 mt-5 mx-4 sm:mx-6">
-        {AdvantageList.map(({ title, desc }) => (
-          <div
-            key={title}
-            className="flex flex-col justify-start items-center text-center"
-          >
-            <span className="text-heading4 text-neutral-600 font-semibold">
-              {title}
-            </span>
-            <div className="text-label14 text-neutral-400 mt-1">{desc}</div>
-          </div>
-        ))}
-      </div>
-      <Link
-        to="https://docs.devstream.io/en/latest/development/architecture/"
-        className="text-[14px] leading-[1.2] text-primary
-        flex flex-row justify-center items-center gap-1 mt-5
+      <div
+        className="flex flex-col flex-nowrap self-stretch
+        mx-4 mt-5
+        sm:mx-6
+        lg:flex-row lg:justify-between lg:items-center lg:max-w-[1600px]
+        lg:mt-6
+      "
+      >
+        <ArchitectureSvg className="lg:w-[60%]" />
+        <div
+          className="flex flex-col gap-3 mt-5
+        lg:w-[30%] lg:m-[0]
+        "
+        >
+          {AdvantageList.map(({ title, desc }) => (
+            <div
+              key={title}
+              className="flex flex-col justify-start items-center text-center
+              lg:items-start lg:text-start"
+            >
+              <span
+                className="text-heading4 text-neutral-600 font-semibold
+              lg:text-heading2
+              "
+              >
+                {title}
+              </span>
+              <div className="text-label14 text-neutral-400 mt-1 lg:text-label18">
+                {desc}
+              </div>
+            </div>
+          ))}
+          <Link
+            to="https://docs.devstream.io/en/latest/development/architecture/"
+            className="text-[14px] leading-[1.2] text-primary
+        gap-1 mt-5
+        w-fit self-center lg:self-start hover:no-underline
+        lg:text-heading2
         hover:text-primary-light
         "
-      >
-        See Architecture <ArrowRightSvg className="w-[17px] h-[17px] -translate-y-[.12em]" />
-      </Link>
+          >
+            See Architecture
+            <ArrowRightSvg
+              className="w-[17px] h-[17px] translate-y-[.2em]
+            lg:w-[30px] lg:h-[30px]
+            "
+            />
+          </Link>
+        </div>
+      </div>
     </section>
   );
 };

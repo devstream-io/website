@@ -48,7 +48,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
   .section-title {
     @apply text-heading2;
-    @apply text-neutral-600 font-semibold;
+    @apply text-neutral-600 font-semibold m-[0];
     @apply lg:text-[40px] lg:leading-[1.2];
   }
 }
