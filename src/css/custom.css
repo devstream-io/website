@@ -5,6 +5,13 @@
  */
 
 /* You can override the default Infima variables here. */
+
+/**
+ * Enable tailwindcss, preflight styles from tailwind are removed to avoid conflicts.
+ */
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --ifm-color-primary: #7497f7;
   --ifm-color-primary-dark: #5d7cd2;
