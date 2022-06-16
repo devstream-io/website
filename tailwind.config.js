@@ -20,15 +20,21 @@ module.exports = {
         primary: '#7497F7',
         'primary-light': '#99B3F9',
         'primary-100': '#F0F4FE',
-        'neutral-invert': '#FFFFFF',
+        neutral: {
+          invert: '#FFFFFF',
+          400: '#70727F',
+          600: '#292B3F',
+        },
       },
       fontSize: {
         heading2: ['24px', { lineHeight: 1.25 }],
+        heading3: ['20px', { lineHeight: 1.25 }],
+        label14: ['14px', { lineHeight: 1.43 }],
       },
       boxShadow: {
-        sm:  '0px 2.4px 4.8px -0.8px rgba(0, 0, 0, 0.2), 0px 1.6px 8px rgba(0, 0, 0, 0.2)',
-        lg: '0px 4.8px 9.6px -0.8px rgba(0, 0, 0, 0.2), 0px 3.2px 16px rgba(0, 0, 0, 0.2)'
-      }
+        sm: '0px 2.4px 4.8px -0.8px rgba(0, 0, 0, 0.2), 0px 1.6px 8px rgba(0, 0, 0, 0.2)',
+        lg: '0px 4.8px 9.6px -0.8px rgba(0, 0, 0, 0.2), 0px 3.2px 16px rgba(0, 0, 0, 0.2)',
+      },
     },
   },
   plugins: [],

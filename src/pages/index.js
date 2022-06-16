@@ -1,5 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -7,7 +6,6 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import HeaderSvg from '@site/static/img/header.svg';
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <header
       className="
@@ -36,7 +34,7 @@ function HomepageHeader() {
         </div>
         <div
           className="text-primary
-        text-[14px] leading-[1.43]
+        text-label14
         lg:text-[32px] lg:text-[1.25]
         text-center sm:text-start
         "
