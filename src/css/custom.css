@@ -45,4 +45,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     @apply rounded-[4.9px] lg:rounded-[10px];
     @apply shadow-sm shadow-primary/20 lg:shadow-lg lg:shadow-primary/20;
   }
+
+  .section-title {
+    @apply text-heading2;
+    @apply text-neutral-600 font-semibold;
+    @apply lg:text-[40px] lg:leading-[1.2];
+  }
 }

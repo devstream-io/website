@@ -2,7 +2,7 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   corePlugins: {
-    preflight: false
+    preflight: false,
   },
   theme: {
     spacing: {
@@ -30,13 +30,15 @@ module.exports = {
         },
       },
       fontSize: {
+        heading1: ['32px', { lineHeight: 1.25 }],
         heading2: ['24px', { lineHeight: 1.25 }],
         heading3: ['20px', { lineHeight: 1.25 }],
         heading4: ['16px', { lineHeight: 1.25 }],
         label14: ['14px', { lineHeight: 1.43 }],
+        label18: ['18px', { lineHeight: 1.56 }],
       },
       dropShadow: {
-        xl: ['0px 3.2px 16px rgba(153, 179, 249, 0.1)']
+        xl: ['0px 3.2px 16px rgba(153, 179, 249, 0.1)'],
       },
       boxShadow: {
         sm: '0px 2.4px 4.8px -0.8px rgba(0, 0, 0, 0.2), 0px 1.6px 8px rgba(0, 0, 0, 0.2)',
