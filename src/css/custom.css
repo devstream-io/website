@@ -9,6 +9,7 @@
 /**
  * Enable tailwindcss, preflight styles from tailwind are removed to avoid conflicts.
  */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 

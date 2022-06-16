@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import { WhyDevStream } from "@site/src/components/why-dev-stream";
 import HeaderSvg from '@site/static/img/header.svg';
 
 function HomepageHeader() {
@@ -70,6 +71,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <WhyDevStream />
       </main>
     </Layout>
   );
