@@ -1,7 +1,8 @@
 import clsx from 'clsx';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import Ripple from '@site/static/img/ripple-mark.svg';
+import { useParallax } from 'react-scroll-parallax';
 
 const reasons = [
   'Too much effort integrating and maintaining every piece of DevOps?',
@@ -10,31 +11,93 @@ const reasons = [
   'Small team, a lot of tools, and way too few DevOps engineers to fully realize your pipelines?',
 ];
 
+function throttle(fn) {
+  let timer = null;
+  return function () {
+    if (timer === null) {
+      timer = setTimeout(() => {
+        fn();
+        timer = null;
+      }, 100);
+    }
+  };
+}
+
+const useFadeIn = ({ startVh, endVh } = { startVh: 100, endVh: 0 }) => {
+  const [startScroll, setStartScroll] = useState(0);
+  const [endScroll, setEndScroll] = useState(0);
+  const bodyHeightRef = useRef(0);
+  const { ref } = useParallax({
+    translateY: ['100px', '0px'],
+    opacity: [0, 1],
+    startScroll,
+    endScroll,
+  });
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!ref.current) {
+        return;
+      }
+      const bodyTop = document.body.getBoundingClientRect().top;
+      const top = ref.current.getBoundingClientRect().top;
+      const bodyHeight = document.body.scrollHeight;
+      const viewportHeight = window.innerHeight;
+      const distance = Math.abs(top - bodyTop);
+      // only update startScroll when the height of body is changed
+      if (bodyHeight !== bodyHeightRef.current) {
+        bodyHeightRef.current = bodyHeight;
+        const start = distance - viewportHeight * (startVh / 100);
+        setStartScroll(start);
+        setEndScroll(start + viewportHeight * (1 - endVh / 100));
+      }
+    };
+    window.addEventListener('scroll', throttle(handleScroll));
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [startScroll]);
+  return ref;
+};
+
 export const WhyDevStream = () => {
+  const fadeInRef1 = useFadeIn({ startVh: 100, endVh: 50 });
+  const fadeInRef2 = useFadeIn({ startVh: 100, endVh: 50 });
+  const fadeInRef3 = useFadeIn({ startVh: 100, endVh: 70 });
+  const fadeInRef4 = useFadeIn({ startVh: 100, endVh: 70 });
   return (
     <section
       className="bg-primary-100 relative overflow-clip flex flex-col flex-nowrap items-center justify-start
     py-6
     "
     >
-      <h3 className="z-10 section-title">
+      <h3 className="z-10 section-title" ref={fadeInRef1}>
         Why DevStream
       </h3>
-      <MsgBox className="mx-4 self-stretch z-10 flex flex-col flex-nowrap gap-3
+      <div ref={fadeInRef2} className="z-10">
+        <MsgBox
+          className="mx-4 self-stretch flex flex-col flex-nowrap gap-3
       sm:mx-6 sm:gap-1
       lg:gap-[4px] lg:max-w-[1086px] lg:self-center
-      ">
-        {reasons.map((reason) => (
-          <Reason key={reason}>{reason}</Reason>
-        ))}
-      </MsgBox>
-      <span className="text-heading2 text-primary font-semibold mt-[10px] z-10
-      lg:text-[64px] leading-[1.2] lg:mt-3">
+      "
+        >
+          {reasons.map((reason) => (
+            <Reason key={reason}>{reason}</Reason>
+          ))}
+        </MsgBox>
+      </div>
+      <span
+        ref={fadeInRef3}
+        className="text-heading2 text-primary font-semibold mt-[10px] z-10
+      lg:text-[64px] leading-[1.2] lg:mt-3"
+      >
         Worry no more.
       </span>
-      <span className="text-heading4 text-neutral-600 font-semibold mt-1 z-10
+      <span
+        ref={fadeInRef4}
+        className="text-heading4 text-neutral-600 font-semibold mt-1 z-10
       lg:text-heading1 lg:mt-3
-      ">
+      "
+      >
         DevStream will get you covered.
       </span>
       <Ripple

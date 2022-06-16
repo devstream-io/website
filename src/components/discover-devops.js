@@ -4,13 +4,17 @@ import RippleMarksSvg from '@site/static/img/ripple-marks.svg';
 
 export const DiscoverDevops = () => {
   return (
-    <section className="py-5 bg-primary-100 relative overflow-clip flex flex-col
+    <section
+      className="py-5 bg-primary-100 relative overflow-clip flex flex-col
     lg:py-8
-    ">
-      <span className="text-heading3 text-primary font-semibold text-center z-10
+    "
+    >
+      <span
+        className="text-heading3 text-primary font-semibold text-center z-10
       sm:text-heading2
       lg:text-[54px] lg:text-[1.63]
-      ">
+      "
+      >
         Discover DevOps Workflow with DevStream
       </span>
       <Link
@@ -19,7 +23,7 @@ export const DiscoverDevops = () => {
       >
         Quick Start
       </Link>
-      <RippleMarksSvg className="opacity-50 absolute -top-1/2 z-0" />
+      <RippleMarksSvg className="opacity-50 absolute -top-1/2 z-0 max-w-[1000px] self-center" />
     </section>
   );
 };

@@ -1,12 +1,13 @@
-import { DiscoverDevops } from "@site/src/components/discover-devops";
-import { HowDevStreamWorks } from "@site/src/components/how-dev-stream-works";
+import { DiscoverDevops } from '@site/src/components/discover-devops';
+import { HowDevStreamWorks } from '@site/src/components/how-dev-stream-works';
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import { WhyDevStream } from "@site/src/components/why-dev-stream";
+import { WhyDevStream } from '@site/src/components/why-dev-stream';
 import HeaderSvg from '@site/static/img/header.svg';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function HomepageHeader() {
   return (
@@ -20,10 +21,12 @@ function HomepageHeader() {
       justify-between items-center
       bg-primary-100"
     >
-      <div className="flex flex-col flex-nowrap items-center justify-start
+      <div
+        className="flex flex-col flex-nowrap items-center justify-start
       gap-4
       sm:items-start
-      ">
+      "
+      >
         <div
           className="text-primary
          font-semibold text-heading2 leading-[1.5]
@@ -53,10 +56,12 @@ function HomepageHeader() {
           Quick Start
         </Link>
       </div>
-      <div className="h-[200px] w-[200px] mt-3
+      <div
+        className="h-[200px] w-[200px] mt-3
       sm:mt-[0] sm:h-[219px] sm:w-[219px]
       lg:h-[540px] lg:w-[540px]
-      ">
+      "
+      >
         <HeaderSvg />
       </div>
     </header>
@@ -66,17 +71,19 @@ function HomepageHeader() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-        <WhyDevStream />
-        <HowDevStreamWorks />
-        <DiscoverDevops />
-      </main>
-    </Layout>
+    <ParallaxProvider>
+      <Layout
+        title={`Hello from ${siteConfig.title}`}
+        description="Description will go into a meta tag in <head />"
+      >
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+          <WhyDevStream />
+          <HowDevStreamWorks />
+          <DiscoverDevops />
+        </main>
+      </Layout>
+    </ParallaxProvider>
   );
 }
