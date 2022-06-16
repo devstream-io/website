@@ -4,6 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+// @ts-ignore
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'DevStream',
@@ -46,17 +47,19 @@ const config = {
         sidebarPath: require.resolve('./sidebarsCommunity.js'),
       },
     ],
-    function tailwindcss(context, options) {
+    function tailwindcss() {
       return {
-        name: "docusaurus-tailwindcss",
+        name: 'docusaurus-tailwindcss',
         configurePostCss(postcssOptions) {
           // Appends TailwindCSS and AutoPrefixer.
-          postcssOptions.plugins.push(require("tailwindcss"));
-          postcssOptions.plugins.push(require("autoprefixer"));
+          postcssOptions.plugins.push(require('tailwindcss'));
+          postcssOptions.plugins.push(require('autoprefixer'));
           return postcssOptions;
         },
       };
     },
+    // @ts-ignore
+    customizedSvgo,
   ],
 
   i18n: {
@@ -72,9 +75,8 @@ const config = {
       },
     },
   },
-
   themeConfig:
-  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
         title: 'DevStream',
@@ -93,12 +95,12 @@ const config = {
             docId: 'index',
             position: 'left',
             label: 'Community',
-            docsPluginId: 'community'
+            docsPluginId: 'community',
           },
           {
             href: 'https://blog.devstream.io',
             label: 'Blog',
-            position: 'left'
+            position: 'left',
           },
           {
             href: 'https://medium.com/devstream',
@@ -160,4 +162,41 @@ const config = {
     }),
 };
 
+function customizedSvgo() {
+  return {
+    name: 'docusaurus-svgo',
+    configureWebpack(config) {
+      // allow svgr to use svgo config file
+      for (const rule of config.module.rules) {
+        if (
+          typeof rule === 'object' &&
+          rule.test.toString() === '/\\.svg$/i'
+        ) {
+          for (const nestedRule of rule.oneOf) {
+            if (nestedRule.use instanceof Array) {
+              for (const loader of nestedRule.use) {
+                if (
+                  typeof loader === 'object' &&
+                  loader.loader === require.resolve('@svgr/webpack')
+                ) {
+                  if (typeof loader.options === 'object') {
+                    loader.options.svgoConfig = null;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      return {
+        mergeStrategy: {
+          'module.rules': 'replace',
+        },
+        module: {
+          rules: config.module.rules,
+        },
+      };
+    },
+  };
+}
 module.exports = config;
