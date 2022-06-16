@@ -12,15 +12,23 @@ function HomepageHeader() {
     <header
       className="
       pt-5 pb-6 px-4
+      sm:py-4 sm:px-6
+      lg:py-6 lg:pr-[120px] lg:pl-[80px]
       flex flex-col
+      sm:flex-row
       justify-between items-center
       bg-primary-100"
     >
-      <div className="flex flex-col flex-nowrap items-center justify-start">
+      <div className="flex flex-col flex-nowrap items-center justify-start
+      gap-4
+      sm:items-start
+      ">
         <div
           className="text-primary
          font-semibold text-heading2 leading-[1.5]
-         text-center"
+         sm:leading-[1.25]
+         lg:text-[54px] lg:text-[1.44]
+         text-center sm:text-start"
         >
           DevStream:
           <br />
@@ -28,8 +36,10 @@ function HomepageHeader() {
         </div>
         <div
           className="text-primary
-        text-[14px] leading-[1.43] mt-3
-        text-center"
+        text-[14px] leading-[1.43]
+        lg:text-[32px] lg:text-[1.25]
+        text-center sm:text-start
+        "
         >
           Discover DevOps workflow that suits you best.
           <br />
@@ -42,7 +52,10 @@ function HomepageHeader() {
           Quick Start
         </Link>
       </div>
-      <div className="h-[200px] w-[200px] mt-3">
+      <div className="h-[200px] w-[200px] mt-3
+      sm:mt-[0] sm:h-[219px] sm:w-[219px]
+      lg:h-[540px] lg:w-[540px]
+      ">
         <HeaderSvg />
       </div>
     </header>
