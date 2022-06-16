@@ -1,3 +1,4 @@
+import { HowDevStreamWorks } from "@site/src/components/how-dev-stream-works";
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -72,6 +73,7 @@ export default function Home() {
       <main>
         <HomepageFeatures />
         <WhyDevStream />
+        <HowDevStreamWorks />
       </main>
     </Layout>
   );
