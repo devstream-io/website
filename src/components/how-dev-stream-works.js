@@ -31,10 +31,8 @@ export const HowDevStreamWorks = () => {
       <h3 className="section-title">How DevStream Works</h3>
       <div
         className="flex flex-col flex-nowrap self-stretch
-        mx-4 mt-5
-        sm:mx-6
+        mx-4 sm:mx-6
         lg:flex-row lg:justify-between lg:items-center lg:max-w-[1600px]
-        lg:mt-6
       "
       >
         <ArchitectureSvg className="lg:w-[60%]" />
