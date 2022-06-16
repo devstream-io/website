@@ -1,3 +1,4 @@
+import { DiscoverDevops } from "@site/src/components/discover-devops";
 import { HowDevStreamWorks } from "@site/src/components/how-dev-stream-works";
 import React from 'react';
 import Layout from '@theme/Layout';
@@ -74,6 +75,7 @@ export default function Home() {
         <HomepageFeatures />
         <WhyDevStream />
         <HowDevStreamWorks />
+        <DiscoverDevops />
       </main>
     </Layout>
   );
