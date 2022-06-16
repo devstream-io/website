@@ -51,4 +51,11 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     @apply text-neutral-600 font-semibold;
     @apply lg:text-[40px] lg:leading-[1.2] lg:mb-6;
   }
+
+  .floating-link-icon {
+    transition: transform 0.2s ease-in-out;
+  }
+  .floating-link:hover .floating-link-icon {
+    @apply transform translate-x-1;
+  }
 }

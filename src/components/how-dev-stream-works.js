@@ -66,12 +66,14 @@ export const HowDevStreamWorks = () => {
         w-fit self-center lg:self-start hover:no-underline
         lg:text-heading2
         hover:text-primary-light
+        floating-link
         "
           >
             See Architecture
             <ArrowRightSvg
               className="w-[17px] h-[17px] translate-y-[.2em]
             lg:w-[30px] lg:h-[30px]
+            floating-link-icon
             "
             />
           </Link>
