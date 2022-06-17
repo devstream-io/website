@@ -5,7 +5,7 @@ import RippleMarksSvg from '@site/static/img/ripple-marks.svg';
 export const DiscoverDevops = () => {
   return (
     <section
-      className="py-5 bg-primary-100 relative overflow-clip flex flex-col
+      className="py-5 bg-primary-100 relative overflow-hidden flex flex-col
     lg:py-8
     "
     >

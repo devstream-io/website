@@ -66,7 +66,7 @@ export const WhyDevStream = () => {
   const fadeInRef4 = useFadeIn({ startVh: 100, endVh: 70 });
   return (
     <section
-      className="bg-primary-100 relative overflow-clip flex flex-col flex-nowrap items-center justify-start
+      className="bg-primary-100 relative overflow-hidden flex flex-col flex-nowrap items-center justify-start
     py-6
     "
     >
