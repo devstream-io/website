@@ -38,7 +38,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 @layer components {
   .primary-button {
     @apply bg-primary hover:bg-primary-light;
-    @apply inline-flex items-center justify-center;
+    @apply flex items-center justify-center w-fit;
     @apply hover:no-underline hover:text-neutral-invert;
     @apply text-neutral-invert text-[14px] leading-[1.21] font-bold lg:text-heading2;
     @apply px-4 h-5 lg:px-5 lg:h-7;
