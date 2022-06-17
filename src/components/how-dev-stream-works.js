@@ -32,7 +32,7 @@ export const HowDevStreamWorks = () => {
       <div
         className="flex flex-col flex-nowrap self-stretch
         mx-4 sm:mx-6
-        lg:flex-row lg:justify-between lg:items-center lg:max-w-[1600px]
+        lg:flex-row lg:justify-between lg:items-center lg:max-w-[1600px] lg:self-center
       "
       >
         <ArchitectureSvg className="lg:w-[60%]" />
