@@ -19,7 +19,7 @@ export const DiscoverDevops = () => {
       </span>
       <Link
         className="primary-button z-10 self-center mt-3 sm:mt-4 lg:mt-6"
-        to="https://docs.devstream.io/en/latest/quickstart_en/"
+        to="https://docs.devstream.io/en/latest/quickstart/"
       >
         Quick Start
       </Link>
