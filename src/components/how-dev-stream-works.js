@@ -37,7 +37,7 @@ export const HowDevStreamWorks = () => {
       >
         <ArchitectureSvg className="lg:w-[60%]" />
         <div
-          className="flex flex-col gap-3 mt-5
+          className="flex flex-col space-y-3 mt-5
         lg:w-[30%] lg:m-[0]
         "
         >
@@ -62,7 +62,7 @@ export const HowDevStreamWorks = () => {
           <Link
             to="https://docs.devstream.io/en/latest/development/architecture/"
             className="text-[14px] leading-[1.2] text-primary
-        gap-1 mt-5
+        mt-5
         w-fit self-center lg:self-start hover:no-underline
         lg:text-heading2
         hover:text-primary-light

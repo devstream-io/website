@@ -43,7 +43,7 @@ const FeatureList = [
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className="flex flex-col items-center gap-3 lg:gap-6">
+    <div className="flex flex-col items-center space-y-3 lg:space-y-6">
       <div
         className="w-[150px] h-[122px]
       lg:w-[200px] lg:h-[150px]
@@ -88,9 +88,9 @@ export default function HomepageFeatures() {
         What You Can Do with DevStream
       </span>
       <div
-        className="flex flex-nowrap flex-col items-center mt-5 gap-5 px-4
-      lg:flex-row lg:justify-center lg:items-start lg:gap-x-[72px]
-      2xl:gap-x-[166px]
+        className="flex flex-nowrap flex-col items-center mt-5 space-y-5 px-4
+      lg:flex-row lg:justify-center lg:items-start lg:space-x-[72px]
+      2xl:space-x-[166px]
       lg:mt-6
       "
       >

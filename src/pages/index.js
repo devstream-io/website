@@ -23,7 +23,7 @@ function HomepageHeader() {
     >
       <div
         className="flex flex-col flex-nowrap items-center justify-start
-      gap-4
+      space-y-4
       sm:items-start
       "
       >

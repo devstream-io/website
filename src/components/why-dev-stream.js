@@ -75,9 +75,9 @@ export const WhyDevStream = () => {
       </h3>
       <div ref={fadeInRef2} className="z-10">
         <MsgBox
-          className="mx-4 self-stretch flex flex-col flex-nowrap gap-3
-      sm:mx-6 sm:gap-1
-      lg:gap-[4px] lg:max-w-[1086px] lg:self-center
+          className="mx-4 self-stretch flex flex-col flex-nowrap space-y-3
+      sm:mx-6 sm:space-y-1
+      lg:space-y-[4px] lg:max-w-[1086px] lg:self-center
       "
         >
           {reasons.map((reason) => (
