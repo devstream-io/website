@@ -10,7 +10,7 @@ export const DiscoverDevops = () => {
     "
     >
       <span
-        className="text-heading3 text-primary font-semibold text-center z-10
+        className="text-heading3 text-primary font-semibold text-center z-10 mx-4
       sm:text-heading2
       lg:text-[54px] lg:text-[1.63]
       "
