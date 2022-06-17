@@ -89,9 +89,8 @@ export default function HomepageFeatures() {
       </span>
       <div
         className="flex flex-nowrap flex-col items-center mt-5 space-y-5 px-4
-      lg:flex-row lg:justify-center lg:items-start lg:space-x-[72px]
-      2xl:space-x-[166px]
-      lg:mt-6
+      lg:flex-row lg:justify-evenly lg:items-start lg:space-y-[0px] lg:mt-6
+      2xl:justify-center 2xl:space-x-[166px]
       "
       >
         {FeatureList.map((props, idx) => (
