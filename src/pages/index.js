@@ -51,7 +51,7 @@ function HomepageHeader() {
         </div>
         <Link
           className="primary-button"
-          to="https://docs.devstream.io/en/latest/quickstart_en/"
+          to="https://docs.devstream.io/en/latest/quickstart/"
         >
           Quick Start
         </Link>
