@@ -62,8 +62,8 @@ const useFadeIn = ({ startVh, endVh } = { startVh: 100, endVh: 0 }) => {
 export const WhyDevStream = () => {
   const fadeInRef1 = useFadeIn({ startVh: 100, endVh: 50 });
   const fadeInRef2 = useFadeIn({ startVh: 100, endVh: 50 });
-  const fadeInRef3 = useFadeIn({ startVh: 100, endVh: 70 });
-  const fadeInRef4 = useFadeIn({ startVh: 100, endVh: 70 });
+  const fadeInRef3 = useFadeIn({ startVh: 100, endVh: 80 });
+  const fadeInRef4 = useFadeIn({ startVh: 100, endVh: 80 });
   return (
     <section
       className="bg-primary-100 relative overflow-hidden flex flex-col flex-nowrap items-center justify-start
