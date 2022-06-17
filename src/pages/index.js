@@ -74,7 +74,7 @@ export default function Home() {
     <ParallaxProvider>
       <Layout
         title={`Hello from ${siteConfig.title}`}
-        description="Description will go into a meta tag in <head />"
+        description="A Powerful & Flexible DevOps Toolchain Manager"
       >
         <HomepageHeader />
         <main>
