@@ -153,7 +153,6 @@ const config = {
             ],
           },
         ],
-        // copyright: `Copyright © ${new Date().getFullYear()} DevStream@Merico Inc.`,
         copyright: `
         <img style="height:50px; margin-bottom: 10px; margin-top: 10px" alt="Apache Software Foundation" src= "/img/cncf-white-logo.svg" />
         <br />
