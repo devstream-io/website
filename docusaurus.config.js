@@ -153,7 +153,16 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} DevStream@Merico Inc.`,
+        copyright: `
+        <img style="height:50px; margin-bottom: 10px; margin-top: 10px" alt="Apache Software Foundation" src= "/img/cncf-white-logo.svg" />
+        <br />
+        We are a Cloud Native Computing Foundation sandbox project.
+        <br />
+        <strong>© Copyright The DevStream Authors ${new Date().getFullYear()}</strong>
+        <br />
+        <br />
+        © ${new Date().getFullYear()} The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage/"> Trademark Usage</a> page.
+      `,
       },
       prism: {
         theme: lightCodeTheme,
