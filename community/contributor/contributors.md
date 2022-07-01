@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # DevStream Contributors
 
-## New Contributors in 2022 May
+## New Contributors in 2022 May and June
 
-After a vote within DevStream PMC, we've decided to invite Xuecheng Hou, Ran Wei, Liangyu Xiao, Ziyu Wang, Hepeng Li, Junyu Liu, Dunyu Song, Shubham Gupta, Chenglin Yang, Yaozong Li, Weiping Luo, Jie Sheng, Fei Chen, Dengpeng Liu, Xiaoli Rao, Zheng Huang, Xiongxiong Yuan, Wei Xu, Jiaqing An, Zhenhang Zhao, Yisong Han and Weiwei Ding to be Contributors of DevStream community!
+After a vote within DevStream PMC, we've decided to invite Xuecheng Hou, Ran Wei, Liangyu Xiao, Ziyu Wang, Hepeng Li, Junyu Liu, Dunyu Song, Shubham Gupta, Chenglin Yang, Yaozong Li, Weiping Luo, Jie Sheng, Fei Chen, Dengpeng Liu, Xiaoli Rao, Zheng Huang, Xiongxiong Yuan, Wei Xu, Jiaqing An, Zhenhang Zhao, Yisong Han, Weiwei Ding, Dehao Cheng, Ruicun Guo, Xianjie Shen, Xianghui Zeng, Chuanshuo Zu, Weichuan Jia, Zhiqi Zeng, Haichao Wang and Lei Wu to be Contributors of DevStream community!
 
 ### Xuecheng Hou
 
@@ -141,7 +141,61 @@ After a vote within DevStream PMC, we've decided to invite Xuecheng Hou, Ran Wei
 
 ![dingweiwei](/img/community/contributor/contributors/dingweiwei.png)
 
-## New Contributors in 2022 Mar
+### Dehao Cheng
+
+---
+
+![chengdehao](/img/community/contributor/contributors/chengdehao.png)
+
+### Ruicun Guo
+
+---
+
+![guoruicun](/img/community/contributor/contributors/guoruicun.png)
+
+### Xianjie Shen
+
+---
+
+![shenxianjie](/img/community/contributor/contributors/shenxianjie.png)
+
+### Xianghui Zeng
+
+---
+
+![zengxianghui](/img/community/contributor/contributors/zengxianghui.png)
+
+### Binshuo Zu
+
+---
+
+![zubinshuo](/img/community/contributor/contributors/zubinshuo.png)
+
+### Weichuan Jia
+
+---
+
+![jiaweichuan](/img/community/contributor/contributors/jiaweichuan.png)
+
+### Zhiqi Zeng
+
+---
+
+![zengzhiqi](/img/community/contributor/contributors/zengzhiqi.png)
+
+### Haichao Wang
+
+---
+
+![wanghaichao](/img/community/contributor/contributors/wanghaichao.png)
+
+### Lei Wu
+
+---
+
+![wulei](/img/community/contributor/contributors/wulei.png)
+
+## New Contributors in 2022 Mar and Apr
 
 After a vote within DevStream PMC, we've decided to invite Wu Xu, Suming Yu, Yingchu Chen, and Kaitian Xie to be contributors of DevStream community!
 
