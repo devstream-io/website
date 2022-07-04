@@ -10,7 +10,7 @@ Issue / bug report / doc improvement / tech evangelism / bugfix / new feature ..
 
 See our [certified contributors here](https://www.devstream.io/zh/blog/devstream-community-new-members/).
 
-## New Members in 2022 Mar
+## New Members in 2022 Mar and Apr
 
 After a vote within DevStream PMC, we've decided to invite Wu Xu, Suming Yu, Yingchu Chen, and Kaitian Xie to be the members of DevStream community!
 

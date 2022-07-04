@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # DevStream 社区新晋 Member 们
 
-## 2022 年 5 月新晋 Member
+## 2022 年 5-6 月新晋 Member
 
 5 月份又有三位优秀的社区贡献者，以极大的热情、激情持续参与社区贡献！所以经过 DevStream PMC 内部投票表决，我们决定邀请刘俊余、李鹤鹏和侯雪城三位同学加入 DevStream GitHub Organization，成为 DevStream Member！
 
@@ -12,7 +12,7 @@ sidebar_position: 2
 
 - [少年，来了，就别走了！](https://blog.devstream.io/posts/5月新晋member/)
 
-## 2022 年 3 月新晋 Member
+## 2022 年 3-4 月新晋 Member
 
 2022 年 3 月 DevStream 正式发布 v0.1 版本以来，在短短一个月内收获了数位贡献者！他们都在 DevStream 社区非常活跃，
 以很高的积极性参与 bug 反馈、文档完善、技术布道、bugfix、feature 开发等等社区工作！这些全部都是我们非常认可的贡献方式！

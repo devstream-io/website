@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # DevStream 社区可爱的贡献者们
 
-## 2022 年 5 月新晋贡献者
+## 2022 年 5-6 月新晋贡献者
 
-经过 DevStream PMC 内部投票表决，我们决定邀请侯雪城、魏冉、肖良玉、王子聿、李鹤鹏、刘俊余、宋盾宇、Shubham Gupta、杨成林、李耀宗、罗卫平、盛杰、陈飞、刘登鹏、饶小力、苑雄雄、许伟、安家庆、赵振航、韩艺松和丁伟伟等 22 位贡献者成为 Contributor！
+经过 DevStream PMC 内部投票表决，我们决定邀请侯雪城、魏冉、肖良玉、王子聿、李鹤鹏、刘俊余、宋盾宇、Shubham Gupta、杨成林、李耀宗、罗卫平、盛杰、陈飞、刘登鹏、饶小力、苑雄雄、许伟、安家庆、赵振航、韩艺松、丁伟伟、程德昊、郭瑞存、沈先捷、曾祥辉、祖彬朔、贾伟川、曾志崎、王海超和吴雷等 31 位贡献者成为 Contributor！
 
 ---
 
@@ -136,14 +136,68 @@ sidebar_position: 1
 
 ![hanyisong](/img/community/contributor/contributors/hanyisong.png)
 
-
 ### 丁伟伟
 
 ---
 
 ![dingweiwei](/img/community/contributor/contributors/dingweiwei.png)
 
-## 2022 年 3 月新晋贡献者
+
+### 程德昊
+
+---
+
+![chengdehao](/img/community/contributor/contributors/chengdehao.png)
+
+### 郭瑞存
+
+---
+
+![guoruicun](/img/community/contributor/contributors/guoruicun.png)
+
+### 沈先捷
+
+---
+
+![shenxianjie](/img/community/contributor/contributors/shenxianjie.png)
+
+### 曾祥辉
+
+---
+
+![zengxianghui](/img/community/contributor/contributors/zengxianghui.png)
+
+### 祖彬朔
+
+---
+
+![zubinshuo](/img/community/contributor/contributors/zubinshuo.png)
+
+### 贾伟川
+
+---
+
+![jiaweichuan](/img/community/contributor/contributors/jiaweichuan.png)
+
+### 曾志崎
+
+---
+
+![zengzhiqi](/img/community/contributor/contributors/zengzhiqi.png)
+
+### 王海超
+
+---
+
+![wanghaichao](/img/community/contributor/contributors/wanghaichao.png)
+
+### 吴雷
+
+---
+
+![wulei](/img/community/contributor/contributors/wulei.png)
+
+## 2022 年 3-4 月新晋贡献者
 
 经过 DevStream PMC 内部投票表决，我们决定邀请徐武、陈映初、余苏明和谢开天等 4 位贡献者成为 Contributor！
 
