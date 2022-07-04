@@ -154,7 +154,7 @@ const config = {
           },
         ],
         copyright: `
-        <img style="height:50px; margin-bottom: 10px; margin-top: 10px" alt="Apache Software Foundation" src= "/img/cncf-white-logo.svg" />
+        <img style="height:50px; margin-bottom: 10px; margin-top: 10px" alt="Cloud Native Computing Foundation" src= "/img/cncf-white-logo.svg" />
         <br />
         We are a Cloud Native Computing Foundation sandbox project.
         <br />
