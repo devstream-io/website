@@ -4,6 +4,46 @@ sidebar_position: 1
 
 # DevStream 社区可爱的贡献者们
 
+## 2022 年 7-8 月新晋贡献者
+
+经过 DevStream PMC 内部投票表决，我们决定邀请Prasurjya Pran Borah、高强、叶奔、Prajwal Borkar、胡志文和刘梓霖等 6 位贡献者成为 Contributor！
+
+### Prasurjya Pran Borah
+
+---
+
+![Prasurjya Pran Borah](/img/community/contributor/contributors/PrasurjyaPranBorah.png)
+
+### 高强
+
+---
+
+![gaoqiang](/img/community/contributor/contributors/gaoqiang.png)
+
+### 叶奔
+
+---
+
+![yeben](/img/community/contributor/contributors/yeben.png)
+
+### Prajwal Borkar
+
+---
+
+![Prajwal Borkar](/img/community/contributor/contributors/PrajwalBorkar.png)
+
+### 胡志文
+
+---
+
+![huzhiwen](/img/community/contributor/contributors/huzhiwen.png)
+
+### 刘梓霖
+
+---
+
+![liuzilin](/img/community/contributor/contributors/liuzilin.png)
+
 ## 2022 年 5-6 月新晋贡献者
 
 经过 DevStream PMC 内部投票表决，我们决定邀请侯雪城、魏冉、肖良玉、王子聿、李鹤鹏、刘俊余、宋盾宇、Shubham Gupta、杨成林、李耀宗、罗卫平、盛杰、陈飞、刘登鹏、饶小力、苑雄雄、许伟、安家庆、赵振航、韩艺松、丁伟伟、程德昊、郭瑞存、沈先捷、曾祥辉、祖彬朔、贾伟川、曾志崎、王海超和吴雷等 31 位贡献者成为 Contributor！

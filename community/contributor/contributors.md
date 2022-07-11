@@ -4,6 +4,46 @@ sidebar_position: 1
 
 # DevStream Contributors
 
+## New Contributors in 2022 July and Aug
+
+After a vote within DevStream PMC, we've decided to invite Prasurjya Pran Borah, Qiang Gao, Ben Ye, Prajwal Borkar, Zhiwen Hu and Zilin Liu to be Contributors of DevStream community!
+
+### Prasurjya Pran Borah
+
+---
+
+![Prasurjya Pran Borah](/img/community/contributor/contributors/PrasurjyaPranBorah.png)
+
+### Qiang Gao
+
+---
+
+![gaoqiang](/img/community/contributor/contributors/gaoqiang.png)
+
+### Ben Ye
+
+---
+
+![yeben](/img/community/contributor/contributors/yeben.png)
+
+### Prajwal Borkar
+
+---
+
+![Prajwal Borkar](/img/community/contributor/contributors/PrajwalBorkar.png)
+
+### Zhiwen Hu
+
+---
+
+![huzhiwen](/img/community/contributor/contributors/huzhiwen.png)
+
+### Zilin Liu
+
+---
+
+![liuzilin](/img/community/contributor/contributors/liuzilin.png)
+
 ## New Contributors in 2022 May and June
 
 After a vote within DevStream PMC, we've decided to invite Xuecheng Hou, Ran Wei, Liangyu Xiao, Ziyu Wang, Hepeng Li, Junyu Liu, Dunyu Song, Shubham Gupta, Chenglin Yang, Yaozong Li, Weiping Luo, Jie Sheng, Fei Chen, Dengpeng Liu, Xiaoli Rao, Zheng Huang, Xiongxiong Yuan, Wei Xu, Jiaqing An, Zhenhang Zhao, Yisong Han, Weiwei Ding, Dehao Cheng, Ruicun Guo, Xianjie Shen, Xianghui Zeng, Chuanshuo Zu, Weichuan Jia, Zhiqi Zeng, Haichao Wang and Lei Wu to be Contributors of DevStream community!
