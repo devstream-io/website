@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <ParallaxProvider>
       <Layout
-        title={`Hello from ${siteConfig.title}`}
+        title={`The Definitive DevOps Toolchain Manager`}
         description="A Powerful & Flexible DevOps Toolchain Manager"
       >
         <HomepageHeader />
