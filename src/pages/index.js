@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <ParallaxProvider>
       <Layout
-        title={`The Definitive DevOps Toolchain Manager`}
+        title={`The Definitive DevOps Toolchain Manager | DevStream`}
         description="Discover DevOps workflow that suits you best. DevStream will take care of the rest."
       >
         <HomepageHeader />
