@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   corePlugins: {
     preflight: false,
   },
@@ -36,6 +36,8 @@ module.exports = {
         heading4: ['16px', { lineHeight: 1.25 }],
         label14: ['14px', { lineHeight: 1.43 }],
         label18: ['18px', { lineHeight: 1.56 }],
+        body: ['14px', { lineHeight: 1.214 }],
+        "body-sm": ['12px', { lineHeight: 1.25 }]
       },
       dropShadow: {
         xl: ['0px 3.2px 16px rgba(153, 179, 249, 0.1)'],
@@ -43,6 +45,8 @@ module.exports = {
       boxShadow: {
         sm: '0px 2.4px 4.8px -0.8px rgba(0, 0, 0, 0.2), 0px 1.6px 8px rgba(0, 0, 0, 0.2)',
         lg: '0px 4.8px 9.6px -0.8px rgba(0, 0, 0, 0.2), 0px 3.2px 16px rgba(0, 0, 0, 0.2)',
+        lower: '0px 1.2px 2.4px -0.8px rgba(0, 0, 0, 0.1), 0px 0.8px 4px rgba(0, 0, 0, 0.07)',
+        high: '0px 9.6px 19.2px -0.8px rgba(0, 0, 0, 0.1), 0px 6.4px 32px rgba(0, 0, 0, 0.07)'
       },
     },
   },
