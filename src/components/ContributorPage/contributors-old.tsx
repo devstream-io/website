@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Tooltip } from '@site/src/components/tooltip';
 import { chain } from 'lodash';
 
 import {
@@ -23,31 +24,31 @@ interface IContributorInfo {
 const CONTRIBUTORS = [
   {
     name: 'alice',
-    email: 'foo',
+    email: 'foo1',
     title: 'Open-Source Contributor - Associate',
     date: 'May 2022'
   } as IContributorInfo,
   {
     name: 'alice',
-    email: 'foo',
+    email: 'foo2',
     title: 'Open-Source Contributor - Associate',
     date: 'May 2022'
   },
   {
     name: 'alice',
-    email: 'foo',
+    email: 'foo3',
     title: 'Open-Source Contributor - Associate',
     date: 'May 2022'
   },
   {
     name: 'alice',
-    email: 'foo',
+    email: 'foo4',
     title: 'Open-Source Contributor - Associate',
     date: 'May 2022'
   },
   {
     name: 'alice',
-    email: 'foo',
+    email: 'foo5',
     title: 'Open-Source Contributor - Associate',
     date: 'May 2022'
   }
@@ -68,7 +69,9 @@ const ContributorTable =
             {rows[idx].map(col => (<td
               key={col.email}
               style={{ width: '50%' }}
-              className='border border-primary-300'>{col.name}</td>))}
+              className='border border-primary-300'>
+              <Tooltip content="Download">{col.name}</Tooltip>
+            </td>))}
           </tr>))}
         </table>
       </div>
@@ -82,8 +85,12 @@ export const ContributorsOld = () => {
       <span className='text-heading2 font-semibold relative'>
         Old Certification
       </span>
-      <ContributorTable className="mt-5" contributors={CONTRIBUTORS} title='Members'/>
-      <ContributorTable className="mt-6" contributors={CONTRIBUTORS} title='Contributors'/>
+      <ContributorTable className='mt-5'
+                        contributors={CONTRIBUTORS}
+                        title='Members'/>
+      <ContributorTable className='mt-6'
+                        contributors={CONTRIBUTORS}
+                        title='Contributors'/>
     </div>
   </div>;
 };

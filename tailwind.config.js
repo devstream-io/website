@@ -24,6 +24,7 @@ module.exports = {
         'primary-light': '#99B3F9',
         'primary-100': '#F0F4FE',
         'primary-300': '#BDCEFB',
+        'primary-500': '#7497F7',
         neutral: {
           invert: '#FFFFFF',
           400: '#70727F',
