@@ -1,47 +1,11 @@
 import styled from '@emotion/styled';
+import {
+  DocPageTweak
+} from './doc-page-tweak';
 import { TwoRipple } from '@site/src/components/two-ripple';
+import certificationImg from '@site/static/img/contributors/certification.png';
 import React from 'react';
-import { Global, css } from '@emotion/react';
-import certificationImg
-  from '@site/static/img/contributors/certification.png';
 
-
-/**
- * hide some layout elements
- * @constructor
- */
-const DocPageTweak = () => {
-  return <Global styles={css`
-    main {
-      --ifm-spacing-horizontal: 24px;
-    }
-
-    .padding-top--md {
-      background: #F0F4FE;
-    }
-
-    .theme-doc-markdown > header:nth-child(1) {
-      display: none;
-    }
-
-    .pagination-nav {
-      display: none;
-    }
-
-    .container {
-      margin: 0;
-      max-width: unset;
-
-      & > .row > div {
-        max-width: unset !important;
-      }
-    }
-
-    .padding-bottom--lg.container {
-      padding-bottom: 0 !important;
-    }
-  `}/>;
-};
 
 export const DocPageSection = styled.div`
   width: calc(100% + 48px);
@@ -159,7 +123,7 @@ const ContributorList = () => {
 
 export const ContributorsNew = () => {
   return <div>
-    <DocPageTweak/>
+    <DocPageTweak bgColor="#F0F4FE"/>
     <div className='mt-5 flex flex-col max-w-[1200px] m-auto xl:flex-row xl:items-center xl:gap-x-8'>
       <div className='flex justify-center shrink-0'>
         <img

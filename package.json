@@ -41,6 +41,7 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.0.1",
     "@tsconfig/docusaurus": "^1.0.6",
+    "@types/lodash": "^4.14.183",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "prettier": "^2.7.0",
