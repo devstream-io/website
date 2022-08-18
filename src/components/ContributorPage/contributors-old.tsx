@@ -1,17 +1,11 @@
-import styled from '@emotion/styled';
 import { Tooltip } from '@site/src/components/tooltip';
+import { useSize } from 'ahooks';
 import { chain } from 'lodash';
 
 import {
   DocPageTweak
 } from '@site/src/components/ContributorPage/doc-page-tweak';
-import React from 'react';
-
-export const DocPageSection = styled.div`
-  width: calc(100% + 48px);
-  position: relative;
-  left: -24px;
-`;
+import React, { MutableRefObject, useRef } from 'react';
 
 interface IContributorInfo {
   name: string;
@@ -54,25 +48,35 @@ const CONTRIBUTORS = [
   }
 ];
 
+const useTableColumns = (columnMaxWidth: number, tableRef: MutableRefObject<HTMLElement>) => {
+  const size = useSize(tableRef);
+  const width = size?.width ?? 0;
+  return Math.ceil(width / columnMaxWidth) || 2;
+};
+
 const ContributorTable =
   ({
      contributors,
      title,
      className
    }: { contributors: IContributorInfo[], title: string, className?: string }) => {
-    const rows = chain(contributors).chunk(2).value();
+    const tableRef = useRef<HTMLTableElement>(null);
+    const colCount = useTableColumns(300, tableRef);
+    const rows = chain(contributors).chunk(colCount).value();
     return <div className={className}>
       <span className='text-heading3 font-semibold'>{title}</span>
       <div className='shadow-lower mt-4'>
-        <table className='border-hidden table border-collapse w-full'>
-          {rows.map((it, idx) => (<tr key={idx} className='bg-white'>
-            {rows[idx].map(col => (<td
-              key={col.email}
-              style={{ width: '50%' }}
-              className='border border-primary-300'>
-              <Tooltip content="Download">{col.name}</Tooltip>
-            </td>))}
-          </tr>))}
+        <table ref={tableRef}
+               className='border-hidden table border-collapse w-full'>
+          {rows.map((it, idx) => (
+            <tr key={idx} className='bg-white'>
+              {rows[idx].map(col => (
+                <td
+                  key={col.email}
+                  className='border border-primary-300'>
+                  <Tooltip content='Download'>{col.name}</Tooltip>
+                </td>))}
+            </tr>))}
         </table>
       </div>
     </div>;
@@ -81,7 +85,7 @@ const ContributorTable =
 export const ContributorsOld = () => {
   return <div>
     <DocPageTweak/>
-    <div className='mt-5 mb-6 text-neutral-600'>
+    <div className='mt-5 mb-6 text-neutral-600 m-auto max-w-[1200px]'>
       <span className='text-heading2 font-semibold relative'>
         Old Certification
       </span>
