@@ -54,6 +54,7 @@ const config = {
           // Appends TailwindCSS and AutoPrefixer.
           postcssOptions.plugins.push(require('tailwindcss'));
           postcssOptions.plugins.push(require('autoprefixer'));
+          postcssOptions.plugins.push(require('postcss-gap-properties'));
           return postcssOptions;
         },
       };

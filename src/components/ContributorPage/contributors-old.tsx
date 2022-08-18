@@ -68,15 +68,17 @@ const ContributorTable =
       <div className='shadow-lower mt-4'>
         <table ref={tableRef}
                className='border-hidden table border-collapse w-full'>
-          {rows.map((it, idx) => (
-            <tr key={idx} className='bg-white'>
-              {rows[idx].map(col => (
-                <td
-                  key={col.email}
-                  className='border border-primary-300'>
-                  <Tooltip content='Download'>{col.name}</Tooltip>
-                </td>))}
-            </tr>))}
+          <tbody>
+            {rows.map((it, idx) => (
+              <tr key={idx} className='bg-white'>
+                {rows[idx].map(col => (
+                  <td
+                    key={col.email}
+                    className='border border-primary-300'>
+                    <Tooltip content='Download'>{col.name}</Tooltip>
+                  </td>))}
+              </tr>))}
+          </tbody>
         </table>
       </div>
     </div>;
