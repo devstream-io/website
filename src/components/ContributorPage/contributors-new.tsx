@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { TwoRipple } from '@site/src/components/two-ripple';
 import React from 'react';
 import { Global, css } from '@emotion/react';
 import certificationImg
@@ -26,6 +27,19 @@ const DocPageTweak = () => {
     .pagination-nav {
       display: none;
     }
+
+    .container {
+      margin: 0;
+      max-width: unset;
+
+      & > .row > div {
+        max-width: unset !important;
+      }
+    }
+
+    .padding-bottom--lg.container {
+      padding-bottom: 0 !important;
+    }
   `}/>;
 };
 
@@ -33,8 +47,6 @@ export const DocPageSection = styled.div`
   width: calc(100% + 48px);
   position: relative;
   left: -24px;
-  padding-left: 24px;
-  padding-right: 24px;
 `;
 
 const SKILLS = [
@@ -77,26 +89,32 @@ const CONTRIBUTORS = [
     email: 'foo',
     title: 'Open-Source Contributor - Associate',
     date: 'May 2022'
+  },
+  {
+    name: 'alice',
+    email: 'foo',
+    title: 'Open-Source Contributor - Associate',
+    date: 'May 2022'
   }
 ];
 
 export const Skills = () => {
-  return <div className='mt-5'>
-    <span className='text-heading3 text-neutral-600'>Skills</span>
-    <div className='flex flex-row flex-wrap mt-3'>
+  return <div className='my-5 self-start'>
+    <span className='text-heading3 font-semibold text-neutral-600'>Skills</span>
+    <div className='flex flex-row flex-wrap gap-3 mt-3'>
       {SKILLS.map(it => <span
         key={it}
-        className='text-body text-primary mr-3 mb-3 p-1 bg-white rounded-[6px] h-[34px]'>{it}</span>)}
+        className='text-body text-primary p-1 bg-white rounded-[6px] h-[34px]'>{it}</span>)}
     </div>
   </div>;
 };
 
 function Credit() {
   return <>
-<span className='text-primary text-heading2'>
+    <span className='text-primary text-heading2 xl:text-heading1 xl:font-semibold xl:self-start'>
           Open-Source Contributor
         </span>
-    <span className='text-primary text-heading3 mt-2'>
+    <span className='text-primary text-heading3 mt-2 xl:font-semibold xl:text-heading2 xl:self-start'>
           Associate
         </span>
     <div className='mt-5'>
@@ -112,11 +130,11 @@ function Credit() {
 }
 
 function ContributorCard({ info }: { info: IContributorInfo }) {
-  return <div className='py-[20px] px-4 rounded-[10px] transition shadow-lower hover:shadow-high flex'>
+  return <div className='py-[20px] px-4 rounded-[10px] transition bg-white  shadow-lower hover:shadow-high flex items-center'>
     <img className='w-[80px] h-[80px] mr-3'
          src={certificationImg}
          alt={info.name}/>
-    <div className='flex flex-col space-y-1'>
+    <div className='flex flex-col space-y-1 h-fit'>
       <span className='text-body text-neutral-600'>
         {info.name}
       </span>
@@ -131,18 +149,21 @@ function ContributorCard({ info }: { info: IContributorInfo }) {
 }
 
 const ContributorList = () => {
-  return <DocPageSection className='bg-white py-6 space-y-4'>
-    {CONTRIBUTORS.map(it => <ContributorCard key={it.email} info={it}/>)}
+  return <DocPageSection className='bg-white py-6 overflow-hidden px-4 sm:px-[40px]'>
+    <TwoRipple color='#F0F4FE'/>
+    <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 z-10 max-w-[1248px] mx-auto relative'>
+      {CONTRIBUTORS.map(it => <ContributorCard key={it.email} info={it}/>)}
+    </div>
   </DocPageSection>;
 };
 
 export const ContributorsNew = () => {
   return <div>
     <DocPageTweak/>
-    <div className='mt-5 flex flex-col'>
-      <div className='flex justify-center'>
+    <div className='mt-5 flex flex-col max-w-[1200px] m-auto xl:flex-row xl:items-center xl:gap-x-8'>
+      <div className='flex justify-center shrink-0'>
         <img
-          className='w-2/3'
+          className='w-[240px]'
           src={certificationImg} alt='certification-image'/>
       </div>
       <div className='mt-5 flex flex-col justify-center items-center'>
