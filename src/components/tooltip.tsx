@@ -38,7 +38,9 @@ export const Tooltip =
     }[placement.split('-')[0]];
     const { x: arrowX, y: arrowY } = middlewareData?.arrow || {};
     const { getReferenceProps, getFloatingProps } = useInteractions([
-      useHover(context),
+      useHover(context, {
+        delay: { open: 300, close: 0 }
+      }),
     ]);
     getReferenceProps({ ref: reference });
     getFloatingProps({ ref: floating });
