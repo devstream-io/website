@@ -21,7 +21,7 @@ const generateCategory = (category: string, position: number) => {
 };
 
 const generatePage = (badge: string, achievement: string) => {
-  const file = path.resolve(outputDir, badge, `${achievement}.mdx`);
+  const file = path.resolve(outputDir, getCategoryName(badge), `${achievement}.mdx`);
   fs.ensureFileSync(file);
   const content = `---
 title: ${achievement}
