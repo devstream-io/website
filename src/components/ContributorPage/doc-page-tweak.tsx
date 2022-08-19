@@ -9,6 +9,7 @@ export const DocPageTweak = (props: { bgColor?: string }) => {
   return <Global styles={css`
     main {
       --ifm-spacing-horizontal: 24px;
+      position: relative;
     }
 
     .padding-top--md {
