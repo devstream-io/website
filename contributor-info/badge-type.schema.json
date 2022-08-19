@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/badge-type.schema.json",
+  "title": "Schema for badge type",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "Evangelist",
+            "Talented Speaker",
+            "Open-Source Contributor"
+          ]
+        },
+        "achievement": {
+          "enum": [
+            "Associate",
+            "Professional"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "achievement"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "TopN"
+          ]
+        },
+        "achievement": {
+          "enum": [
+            "Top 3 of Year",
+            "Top 3 of Month",
+            "Top 10 of Year"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "achievement"
+      ]
+    }
+  ]
+}

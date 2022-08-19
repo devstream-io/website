@@ -1,0 +1,98 @@
+[
+  {
+    "description": "Earners of this certification have a comprehensive level of Go programming and DevOps tools. They demonstrated the ability to contribute code or documentation to open-source projects, write robust Golang programs, and have a working knowledge of open-source DevOps tools. Badge owners can develop Golang apps following open-source collaboration processes, work with open-source, state-of-the-art CNCF DevOps tools, and write good documentation.",
+    "image": "/img/contributors/badges/DevStream Certified Open-Source Contributor - Associate.svg",
+    "badge": {
+      "type": "Open-Source Contributor",
+      "achievement": "Associate"
+    },
+    "skills": [
+      "DevOps",
+      "Go (Programming Language)",
+      "Open-Source Software",
+      "Software Development",
+      "Software Engineering",
+      "Technical Content Writing"
+    ]
+  },
+  {
+    "badge": {
+      "type": "Open-Source Contributor",
+      "achievement": "Professional"
+    },
+    "image": "/img/contributors/badges/DevStream Certified Open-Source Contributor - Professional.svg",
+    "description": "Earners of this certification have extensive knowledge of the Go programming and DevOps tools. They demonstrated the ability to contribute high-quality code or documentation to open-source projects regularly, design and develop Golang programs following best practices, and have a good understanding of open-source DevOps tools. Badge owners can design and develop Golang apps, work with most of the open-source, state-of-the-art CNCF DevOps tools, and write good English documentation.Earners of this certification have extensive knowledge of the Go programming and DevOps tools. They demonstrated the ability to contribute high-quality code or documentation to open-source projects regularly, design and develop Golang programs following best practices, and have a good understanding of open-source DevOps tools. Badge owners can design and develop Golang apps, work with most of the open-source, state-of-the-art CNCF DevOps tools, and write good English documentation.",
+    "skills": [
+      "DevOps",
+      "Go (Programming Language)",
+      "Open-Source Software",
+      "Software Development",
+      "Software Engineering",
+      "Technical Content Writing"
+    ]
+  },
+  {
+    "badge": {
+      "type": "Evangelist",
+      "achievement": "Associate"
+    },
+    "image": "/img/contributors/badges/DevStream Certified Evangelist - Associate.svg",
+    "description": "Earners of this certification have a comprehensive understanding of open-source community operations. They demonstrated the ability to evangelize and grow the community by writing technical articles, increasing traffic to the community, helping community members, etc. Badge owners can act as open-source evangelists, write well-thought technical blog posts, attract new users, and support community members.",
+    "skills": [
+      "Community Development",
+      "DevOps",
+      "Evangelism Marketing",
+      "Open-Source Software",
+      "Technical Content Writing"
+    ]
+  },
+  {
+    "badge": {
+      "type": "Evangelist",
+      "achievement": "Professional"
+    },
+    "image": "/img/contributors/badges/DevStream Certified Evangelist - Professional.svg",
+    "description": "Earners of this certification have an extensive understanding of open-source community operations. They demonstrated the ability to evangelize and grow the community by writing technical articles regularly, increasing traffic to the community, helping multiple community members, co-hosting podcasts, finding seed users, etc. Badge owners are able to act as senior open-source evangelists.",
+    "skills": [
+      "Community Development",
+      "DevOps",
+      "Evangelism Marketing",
+      "Open-Source Software",
+      "Technical Content Writing"
+    ]
+  },
+  {
+    "badge": {
+      "type": "Talented Speaker",
+      "achievement": "Associate"
+    },
+    "image": "/img/contributors/badges/DevStream Certified Talented Speaker - Associate.svg",
+    "description": "Earners of this certification have a comprehensive level of presentational skills on the topic of open-source and DevStream. They demonstrated the ability to record and edit video/audio tutorials and presentations, and give speeches to a wide audience. Badge owners can do video/audio editing professionally, and give public presentations on technical topics.",
+    "skills": [
+      "Audio Editing",
+      "Community Development",
+      "DevOps",
+      "Open-Source Software",
+      "Presentation Skills",
+      "Technical Content Writing",
+      "Video Editing"
+    ]
+  },
+  {
+    "badge": {
+      "type": "Talented Speaker",
+      "achievement": "Professional"
+    },
+    "image": "/img/contributors/badges/DevStream Certified Talented Speaker - Professional.svg",
+    "description": "Earners of this certification have an extensive level of presentational skills on the topic of open-source and DevStream. They demonstrated the ability to record and edit video/audio tutorials and presentations regularly with consistently high quality, and give speeches in major meetings and conferences. Badge owners can do video/audio editing professionally, and give public presentations on technical topics to a wider audience.Earners of this certification have an extensive level of presentational skills on the topic of open-source and DevStream. They demonstrated the ability to record and edit video/audio tutorials and presentations regularly with consistently high quality, and give speeches in major meetings and conferences. Badge owners can do video/audio editing professionally, and give public presentations on technical topics to a wider audience.",
+    "skills": [
+      "Audio Editing",
+      "Community Development",
+      "DevOps",
+      "Open-Source Software",
+      "Presentation Skills",
+      "Technical Content Writing",
+      "Video Editing"
+    ]
+  }
+]

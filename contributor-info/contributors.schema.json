@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/contributors.schema.json",
+  "title": "Contributors",
+  "description": "DevStream Contributors",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "avatar": {
+        "type": "string"
+      },
+      "certificationLink": {
+        "type": "string"
+      },
+      "dateAdded": {
+        "type": "string"
+      },
+      "badge": {
+        "$ref": "badge-type.schema.json"
+      }
+    },
+    "required": [
+      "name",
+      "email",
+      "avatar",
+      "dateAdded",
+      "certificationLink",
+      "badge"
+    ]
+  }
+}
