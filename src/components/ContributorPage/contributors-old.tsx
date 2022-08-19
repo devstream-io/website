@@ -42,9 +42,17 @@ const ContributorTable = ({
             {rows.map((it, idx) => (
               <tr key={idx} className="bg-white">
                 {rows[idx].map((people) => (
-                  <td key={people.name} className="border border-primary-300">
+                  <td
+                    key={people.name}
+                    className="border border-primary-300"
+                    style={{ width: 100 * (1 / colCount) + '%' }}
+                  >
                     <Tooltip content="Download">
-                      <a href={people.image} target="_blank" className="text-neutral-600 hover:no-underline">
+                      <a
+                        href={people.image}
+                        target="_blank"
+                        className="text-neutral-600 hover:no-underline"
+                      >
                         {people.name}
                       </a>
                     </Tooltip>
