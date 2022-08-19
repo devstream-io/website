@@ -18,7 +18,6 @@ export const DocPageSection = styled.div`
   left: -24px;
 `;
 
-
 export const Skills = ({ skills }: { skills: string[] }) => {
   return (
     <div className="my-5 self-start">
@@ -55,7 +54,11 @@ function BadgeInfo({ badgeInfo }: { badgeInfo: IBadgeInfo }) {
 
 function ContributorCard({ info }: { info: IContributorInfo }) {
   return (
-    <div className="py-[20px] px-4 rounded-[10px] transition bg-white  shadow-lower hover:shadow-high flex items-center">
+    <a
+      className="block py-[20px] no-underline hover:no-underline px-4 rounded-[10px] transition bg-white  shadow-lower hover:shadow-high flex items-center"
+      href={info.certificationLink}
+      target="_blank"
+    >
       <img
         className="w-[80px] h-[80px] mr-3 rounded-full bg-primary-500 shrink-0 uppercase flex justify-center items-center overflow-hidden text-white"
         src={info.avatar}
@@ -68,7 +71,7 @@ function ContributorCard({ info }: { info: IContributorInfo }) {
         </span>
         <span className="text-body-sm text-neutral-500">{info.dateAdded}</span>
       </div>
-    </div>
+    </a>
   );
 }
 

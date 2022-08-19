@@ -36,7 +36,7 @@
       "type": "Evangelist",
       "achievement": "Associate"
     },
-    "image": "/img/contributors/badges/DevStream Certified Evangelist - Associate.svg",
+    "image": "/img/contributors/badges/DevStream Certified Open-Source Evangelist - Associate.svg",
     "description": "Earners of this certification have a comprehensive understanding of open-source community operations. They demonstrated the ability to evangelize and grow the community by writing technical articles, increasing traffic to the community, helping community members, etc. Badge owners can act as open-source evangelists, write well-thought technical blog posts, attract new users, and support community members.",
     "skills": [
       "Community Development",
@@ -51,7 +51,7 @@
       "type": "Evangelist",
       "achievement": "Professional"
     },
-    "image": "/img/contributors/badges/DevStream Certified Evangelist - Professional.svg",
+    "image": "/img/contributors/badges/DevStream Certified Open-Source Evangelist - Professional.svg",
     "description": "Earners of this certification have an extensive understanding of open-source community operations. They demonstrated the ability to evangelize and grow the community by writing technical articles regularly, increasing traffic to the community, helping multiple community members, co-hosting podcasts, finding seed users, etc. Badge owners are able to act as senior open-source evangelists.",
     "skills": [
       "Community Development",
@@ -93,6 +93,54 @@
       "Presentation Skills",
       "Technical Content Writing",
       "Video Editing"
+    ]
+  },
+  {
+    "badge": {
+      "type": "TopN",
+      "achievement": "Top 3 of Month"
+    },
+    "image": "/img/contributors/badges/DevStream Contributor of the Month.svg",
+    "description": "Top 3 of the month is a badge that is awarded to contributors who have contributed the most to the open-source community during the month.",
+    "skills": [
+      "DevOps",
+      "Go (Programming Language)",
+      "Open-Source Software",
+      "Software Development",
+      "Software Engineering",
+      "Technical Content Writing"
+    ]
+  },
+  {
+    "badge": {
+      "type": "TopN",
+      "achievement": "Top 3 of Year"
+    },
+    "image": "/img/contributors/badges/DevStream Core Contributor of the Year.svg",
+    "description": "Top 3 of the year is a badge that is awarded to contributors who have contributed the most to the open-source community during the year.",
+    "skills": [
+      "DevOps",
+      "Go (Programming Language)",
+      "Open-Source Software",
+      "Software Development",
+      "Software Engineering",
+      "Technical Content Writing"
+    ]
+  },
+  {
+    "badge": {
+      "type": "TopN",
+      "achievement": "Top 10 of Year"
+    },
+    "image": "/img/contributors/badges/DevStream Contributor of the Year.svg",
+    "description": "Top 10 of the year is a badge that is awarded to contributors who have contributed the most to the open-source community during the year.",
+    "skills": [
+      "DevOps",
+      "Go (Programming Language)",
+      "Open-Source Software",
+      "Software Development",
+      "Software Engineering",
+      "Technical Content Writing"
     ]
   }
 ]
