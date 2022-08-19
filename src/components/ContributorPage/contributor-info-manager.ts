@@ -1,4 +1,7 @@
 import CONTRIBUTORS from '@site/contributor-info/contributors.json';
+import CONTRIBUTORS_OLD from '@site/contributor-info/contributors-old.json';
+import MEMBERS_OLD from '@site/contributor-info/members-old.json';
+
 import {
   BadgeType,
   IContributorInfo,
@@ -12,3 +15,9 @@ export const getContributors = (badge: BadgeType) => {
     .value() as IContributorInfo[];
 };
 
+export const getOldContributors = () => {
+  return CONTRIBUTORS_OLD.sort();
+};
+export const getOldMembers = () => {
+  return MEMBERS_OLD.sort();
+};
