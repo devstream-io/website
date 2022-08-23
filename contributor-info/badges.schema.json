@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/badges.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "description": {
+        "type": "string"
+      },
+      "image": {
+        "type": "string"
+      },
+      "skills": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "badge": {
+        "$ref": "badge-type.schema.json"
+      }
+    },
+    "required": [
+      "skills",
+      "description",
+      "image",
+      "badge"
+    ]
+  }
+}
