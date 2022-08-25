@@ -1,6 +1,6 @@
 export type BadgeType =
   | {
-      type: 'Evangelist' | 'Talented Speaker' | 'Open-Source Contributor';
+      type: 'Open-Source Evangelist' | 'Talented Speaker' | 'Open-Source Contributor';
       achievement: 'Associate' | 'Professional';
     }
   | {

@@ -8,7 +8,7 @@
       "properties": {
         "type": {
           "enum": [
-            "Evangelist",
+            "Open-Source Evangelist",
             "Talented Speaker",
             "Open-Source Contributor"
           ]
