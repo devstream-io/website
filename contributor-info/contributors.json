@@ -616,6 +616,17 @@
     "dateAdded": "2022/08/07"
   },
   {
+    "name": "Ceshi Li",
+    "email": "example@email.com",
+    "avatar": "https://avatars.githubusercontent.com/aFlyBird0",
+    "certificationLink": "https://www.credly.com/badges/af3fd3e9-2afe-4994-96ee-2fa4a9967cfe",
+    "badge": {
+      "type": "Open-Source Contributor",
+      "achievement": "Professional"
+    },
+    "dateAdded": "2022/08/26"
+  },
+  {
     "name": "Ming Yang",
     "email": "ych_1024@163.com",
     "avatar": "https://avatars.githubusercontent.com/cnych",
