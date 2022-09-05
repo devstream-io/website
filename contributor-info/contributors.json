@@ -691,5 +691,27 @@
       "achievement": "Professional"
     },
     "dateAdded": "2022/07/21"
+  },
+  {
+    "name": "Hao Ke",
+    "email": "hao.ke@merico.dev",
+    "avatar": "https://avatars.githubusercontent.com/KeHaohaoke",
+    "certificationLink": "https://www.credly.com/badges/6e34c73e-8c9e-49f7-9f30-69d97b6c637c",
+    "badge": {
+      "type": "Open-Source Evangelist",
+      "achievement": "Professional"
+    },
+    "dateAdded": "2022/09/05"
+  },
+  {
+    "name": "Hao Ke",
+    "email": "hao.ke@merico.dev",
+    "avatar": "https://avatars.githubusercontent.com/KeHaohaoke",
+    "certificationLink": "https://www.credly.com/badges/14a82cd7-51ae-44d0-b424-9422580a35b7",
+    "badge": {
+      "type": "Talented Speaker",
+      "achievement": "Professional"
+    },
+    "dateAdded": "2022/09/05"
   }
 ]
