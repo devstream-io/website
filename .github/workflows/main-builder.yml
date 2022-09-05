@@ -1,9 +1,6 @@
 name: Production workflow
 
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch # disable this action and use netlify bot instead
 
 jobs:
   build-and-deploy:
@@ -19,7 +16,7 @@ jobs:
           node-version: 17.8.x
       - name: Build Docusaurus website
         run: |
-          npm install 
+          npm install
           npm run build
 
       - name: Deploy to netlify
