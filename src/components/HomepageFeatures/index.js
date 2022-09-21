@@ -54,21 +54,21 @@ function Feature({ Svg, title, description }) {
       </div>
       <div
         className="text-center lg:text-start
-        sm:w-[550px]
+        sm2:w-[550px]
         lg:w-[300px]
         2xl:w-[380px]
       "
       >
         <span
           className="block text-[16px] leading-[1.25] text-neutral-600 font-semibold
-        lg:text-heading2
+        lg:text-heading2stream
         "
         >
           {title}
         </span>
         <p
-          className="mt-1 text-label14 text-neutral-400
-        lg:text-label18
+          className="mt-1 text-label14stream text-neutral-400
+        lg:text-label18stream
         "
         >
           {description}

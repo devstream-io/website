@@ -34,7 +34,7 @@ const ContributorTable = ({
   const rows = chain(contributors).chunk(colCount).value();
   return (
     <div className={className}>
-      <span className="text-heading3 font-semibold">{title}</span>
+      <span className="text-heading3stream font-semibold">{title}</span>
       <div className="shadow-lower mt-4 bg-white">
         <table
           ref={tableRef}
@@ -74,7 +74,7 @@ export const ContributorsOld = () => {
     <DocPageSection className="px-4 overflow-hidden">
       <DocPageTweak />
       <div className="mt-5 mb-6 text-neutral-600 m-auto max-w-[1200px] relative z-10">
-        <span className="text-heading2 font-semibold relative">
+        <span className="text-heading2stream font-semibold relative">
           Old Certification
         </span>
         <ContributorTable

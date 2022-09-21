@@ -31,7 +31,7 @@ export const HowDevStreamWorks = () => {
       <h3 className="section-title">How DevStream Works</h3>
       <div
         className="flex flex-col flex-nowrap self-stretch
-        mx-4 sm:mx-6
+        mx-4 sm2:mx-6
         lg:flex-row lg:justify-between lg:items-center lg:max-w-[1600px] lg:self-center
       "
       >
@@ -48,13 +48,13 @@ export const HowDevStreamWorks = () => {
               lg:items-start lg:text-start"
             >
               <span
-                className="text-heading4 text-neutral-600 font-semibold
-              lg:text-heading2
+                className="text-heading4stream text-neutral-600 font-semibold
+              lg:text-heading2stream
               "
               >
                 {title}
               </span>
-              <div className="text-label14 text-neutral-400 mt-1 lg:text-label18">
+              <div className="text-label14stream text-neutral-400 mt-1 lg:text-label18stream">
                 {desc}
               </div>
             </div>
@@ -64,7 +64,7 @@ export const HowDevStreamWorks = () => {
             className="text-[14px] leading-[1.2] text-primary
         mt-5
         w-fit self-center lg:self-start hover:no-underline
-        lg:text-heading2
+        lg:text-heading2stream
         hover:text-primary-light
         floating-link
         "

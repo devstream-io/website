@@ -10,15 +10,15 @@ export const DiscoverDevops = () => {
     "
     >
       <span
-        className="text-heading3 text-primary font-semibold text-center z-10 mx-4
-      sm:text-heading2
+        className="text-heading3stream text-primary font-semibold text-center z-10 mx-4
+      sm2:text-heading2stream
       lg:text-[54px] lg:text-[1.63]
       "
       >
         Discover DevOps Workflow with DevStream
       </span>
       <Link
-        className="primary-button z-10 self-center mt-3 sm:mt-4 lg:mt-6"
+        className="primary-button z-10 self-center mt-3 sm2:mt-4 lg:mt-6"
         to="https://docs.devstream.io/en/latest/quickstart/"
       >
         Quick Start
