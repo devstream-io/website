@@ -67,10 +67,10 @@ export const WhyDevStream = () => {
   return (
     <section
       className="bg-primary-100 relative overflow-hidden flex flex-col flex-nowrap items-center justify-start
-    py-6
+    py-6 dark:bg-primary-dark-light
     "
     >
-      <h3 className="z-10 section-title" ref={fadeInRef1}>
+      <h3 className="z-10 section-title dark:text-primary" ref={fadeInRef1}>
         Why DevStream
       </h3>
       <div ref={fadeInRef2} className="z-10">
@@ -95,18 +95,18 @@ export const WhyDevStream = () => {
       <span
         ref={fadeInRef4}
         className="text-heading4 text-neutral-600 font-semibold mt-1 z-10
-      lg:text-heading1 lg:mt-3
+      lg:text-heading1 lg:mt-3 dark:text-neutral-300
       "
       >
         DevStream will get you covered.
       </span>
       <Ripple
-        className="absolute opacity-50 z-0
+        className="absolute opacity-50 dark:opacity-5 z-0
        right-[-80px] top-[-50px] w-[200px]
        lg:w-[600px] lg:h-[600px] lg:top-[-170px] lg:right-[-200px]"
       />
       <Ripple
-        className="absolute opacity-50 z-0 rotate-90
+        className="absolute opacity-50 dark:opacity-5 z-0 rotate-90
        left-[-70px] bottom-[-80px] w-[200px]
        lg:w-[400px] lg:h-[400px]"
       />

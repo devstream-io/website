@@ -6,7 +6,7 @@ export const DiscoverDevops = () => {
   return (
     <section
       className="py-5 bg-primary-100 relative overflow-hidden flex flex-col
-    lg:py-8
+    lg:py-8 dark:bg-primary-dark-light
     "
     >
       <span
@@ -23,7 +23,7 @@ export const DiscoverDevops = () => {
       >
         Quick Start
       </Link>
-      <RippleMarksSvg className="opacity-50 absolute -top-1/2 z-0 max-w-[1000px] self-center" />
+      <RippleMarksSvg className="opacity-50 dark:opacity-5 absolute -top-1/2 z-0 max-w-[1000px] self-center" />
     </section>
   );
 };

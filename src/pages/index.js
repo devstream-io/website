@@ -11,7 +11,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 function HomepageHeader() {
   return (
-    <header
+    <div
       className="
       pt-5 pb-6 px-4
       sm:py-4 sm:px-6
@@ -19,7 +19,9 @@ function HomepageHeader() {
       flex flex-col
       sm:flex-row
       justify-between items-center
-      bg-primary-100"
+      bg-primary-100
+      dark:bg-primary-dark-light
+      "
     >
       <div
         className="flex flex-col flex-nowrap items-center justify-start
@@ -64,7 +66,7 @@ function HomepageHeader() {
       >
         <HeaderSvg />
       </div>
-    </header>
+    </div>
   );
 }
 
