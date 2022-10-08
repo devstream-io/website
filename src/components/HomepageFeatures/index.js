@@ -61,14 +61,14 @@ function Feature({ Svg, title, description }) {
       >
         <span
           className="block text-[16px] leading-[1.25] text-neutral-600 font-semibold
-        lg:text-heading2
+        lg:text-heading2 dark:text-neutral-invert
         "
         >
           {title}
         </span>
         <p
           className="mt-1 text-label14 text-neutral-400
-        lg:text-label18
+        lg:text-label18 dark:text-neutral-300
         "
         >
           {description}
@@ -80,9 +80,9 @@ function Feature({ Svg, title, description }) {
 
 export default function HomepageFeatures() {
   return (
-    <section className="bg-white flex flex-col flex-nowrap py-6 items-stretch">
+    <section className="bg-white flex flex-col flex-nowrap py-6 items-stretch dark:bg-primary-dark">
       <span
-        className="section-title text-center
+        className="section-title text-center dark:text-primary
       "
       >
         What You Can Do with DevStream

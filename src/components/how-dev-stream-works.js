@@ -27,8 +27,8 @@ const AdvantageList = [
 
 export const HowDevStreamWorks = () => {
   return (
-    <section className="bg-white py-6 flex flex-col flex-nowrap justify-start items-center">
-      <h3 className="section-title">How DevStream Works</h3>
+    <section className="bg-white py-6 flex flex-col flex-nowrap justify-start items-center dark:bg-primary-dark">
+      <h3 className="section-title dark:text-primary">How DevStream Works</h3>
       <div
         className="flex flex-col flex-nowrap self-stretch
         mx-4 sm:mx-6
@@ -49,12 +49,12 @@ export const HowDevStreamWorks = () => {
             >
               <span
                 className="text-heading4 text-neutral-600 font-semibold
-              lg:text-heading2
+              lg:text-heading2 dark:text-neutral-invert
               "
               >
                 {title}
               </span>
-              <div className="text-label14 text-neutral-400 mt-1 lg:text-label18">
+              <div className="text-label14 text-neutral-400 mt-1 lg:text-label18 dark:text-neutral-300">
                 {desc}
               </div>
             </div>

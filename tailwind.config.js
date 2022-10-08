@@ -4,6 +4,7 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
+  darkMode: ['class', '[data-theme="dark"]'],
   theme: {
     spacing: {
       1: '8px',
@@ -25,8 +26,11 @@ module.exports = {
         'primary-100': '#F0F4FE',
         'primary-300': '#BDCEFB',
         'primary-500': '#7497F7',
+        'primary-dark-light': '#2b3137',
+        'primary-dark': '#20232a',
         neutral: {
           invert: '#FFFFFF',
+          300: '#d4d4d8',
           400: '#70727F',
           600: '#292B3F',
         },
