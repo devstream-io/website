@@ -713,5 +713,16 @@
       "achievement": "Professional"
     },
     "dateAdded": "2022/09/05"
+  },
+  {
+    "name": "Ihor Sychevskyi",
+    "email": "isychevskyi@gmail.com",
+    "avatar": "https://avatars.githubusercontent.com/Arhell",
+    "certificationLink": "https://www.credly.com/badges/2974b9f2-6d6a-4787-8202-6a5dd361fe21",
+    "badge": {
+      "type": "Open-Source Contributor",
+      "achievement": "Associate"
+    },
+    "dateAdded": "2022/10/08"
   }
 ]
