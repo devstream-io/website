@@ -16,7 +16,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Extend Your Toolchain like Lego',
+    title: 'Compose or Extend Your Toolchain like Lego',
     Svg: ExtendToolchainSvg,
     description: (
       <>
