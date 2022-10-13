@@ -47,7 +47,7 @@ function HomepageHeader() {
         text-center sm:text-start
         "
         >
-          Discover DevOps workflow that suits you best.
+          Choose the best DevOps tools that you love.
           <br />
           DevStream will take care of the rest.
         </div>
