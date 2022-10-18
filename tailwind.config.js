@@ -3,6 +3,8 @@
 const {tailwindConfig} = require('dev-website-tailwind-config');
 module.exports = tailwindConfig;
 
+
+// pre config
 // module.exports = {
 //   content: ['./src/**/*.{js,jsx,ts,tsx}'],
 //   corePlugins: {
