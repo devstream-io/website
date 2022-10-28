@@ -14,10 +14,10 @@ function HomepageHeader() {
     <div
       className="
       pt-5 pb-6 px-4
-      sm:py-4 sm:px-6
+      sm2:py-4 sm2:px-6
       lg:py-6 lg:pr-[120px] lg:pl-[80px]
       flex flex-col
-      sm:flex-row
+      sm2:flex-row
       justify-between items-center
       bg-primary-100
       dark:bg-primary-dark-light
@@ -26,15 +26,15 @@ function HomepageHeader() {
       <div
         className="flex flex-col flex-nowrap items-center justify-start
       space-y-4
-      sm:items-start
+      sm2:items-start
       "
       >
         <div
           className="text-primary
-         font-semibold text-heading2 leading-[1.5]
-         sm:leading-[1.25]
+         font-semibold text-heading2stream leading-[1.5]
+         sm2:leading-[1.25]
          lg:text-[54px] lg:text-[1.44]
-         text-center sm:text-start"
+         text-center sm2:text-start"
         >
           DevStream:
           <br />
@@ -42,9 +42,9 @@ function HomepageHeader() {
         </div>
         <div
           className="text-primary
-        text-label14
+        text-label14stream
         lg:text-[32px] lg:text-[1.25]
-        text-center sm:text-start
+        text-center sm2:text-start
         "
         >
           Choose the best DevOps tools that you love.
@@ -60,7 +60,7 @@ function HomepageHeader() {
       </div>
       <div
         className="h-[200px] w-[200px] mt-3
-      sm:mt-[0] sm:h-[219px] sm:w-[219px]
+      sm2:mt-[0] sm2:h-[219px] sm2:w-[219px]
       lg:h-[540px] lg:w-[540px]
       "
       >

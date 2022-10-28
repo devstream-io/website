@@ -76,7 +76,7 @@ export const WhyDevStream = () => {
       <div ref={fadeInRef2} className="z-10">
         <MsgBox
           className="mx-4 self-stretch flex flex-col flex-nowrap space-y-3
-      sm:mx-6 sm:space-y-1
+      sm2:mx-6 sm2:space-y-1
       lg:space-y-[4px] lg:max-w-[1086px] lg:self-center
       "
         >
@@ -87,15 +87,15 @@ export const WhyDevStream = () => {
       </div>
       <span
         ref={fadeInRef3}
-        className="text-heading2 text-primary font-semibold mt-[10px] z-10
+        className="text-heading2stream text-primary font-semibold mt-[10px] z-10
       lg:text-[64px] leading-[1.2] lg:mt-3"
       >
         Worry no more.
       </span>
       <span
         ref={fadeInRef4}
-        className="text-heading4 text-neutral-600 font-semibold mt-1 z-10
-      lg:text-heading1 lg:mt-3 dark:text-neutral-300
+        className="text-heading4stream text-neutral-600 font-semibold mt-1 z-10
+      lg:text-heading1stream lg:mt-3 dark:text-neutral-300
       "
       >
         DevStream will get you covered.
@@ -120,7 +120,7 @@ const MsgBox = ({ children, className }) => {
       className={clsx(
         className,
         'bg-white max-w-full rounded-[20px] px-3 py-4 relative mb-3',
-        'sm:px-6',
+        'sm2:px-6',
         'lg:px-8 lg:py-[40px]',
         'drop-shadow-xl shadow-lg shadow-primary-light/10'
       )}
@@ -145,8 +145,8 @@ const Reason = ({ children, className }) => {
     <div
       className={clsx(
         className,
-        'text-neutral-400 text-label14 flex flex-row flex-nowrap justify-start items-center',
-        'lg:text-label18'
+        'text-neutral-400 text-label14stream flex flex-row flex-nowrap justify-start items-center',
+        'lg:text-label18stream'
       )}
     >
       <span className="rounded-full h-[6px] w-[6px] bg-primary block shrink-0 mr-3"></span>
