@@ -151,7 +151,7 @@ const config = {
             items: [
               {
                 label: 'Slack',
-                href: 'https://join.slack.com/t/devstream-io/shared_invite/zt-16tb0iwzr-krcFGYRN7~Vv1suGZjdv4w',
+                href: 'https://cloud-native.slack.com/archives/C03LA2B8K0A',
               },
             ],
           },
