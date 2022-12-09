@@ -50,7 +50,7 @@ function Feature({ Svg, title, description }) {
       2xl:w-[358px] 2xl:h-[290px]
       "
       >
-        <Svg role="img" />
+        <Svg />
       </div>
       <div
         className="text-center lg:text-start
