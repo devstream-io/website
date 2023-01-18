@@ -735,5 +735,27 @@
       "achievement": "Associate"
     },
     "dateAdded": "2022/10/08"
+  },
+  {
+    "name": "Liang Wu",
+    "email": "wu1998102@gmail.com",
+    "avatar": "https://avatars.githubusercontent.com/22347407 Shuimo03",
+    "certificationLink": "https://www.credly.com/badges/c517cc69-0bf1-4fea-8130-84f3ce5ed56e",
+    "badge": {
+      "type": "Open-Source Contributor",
+      "achievement": "Associate"
+    },
+    "dateAdded": "2023/01/17"
+  },
+  {
+    "name": "Ruonan Liang",
+    "email": "2534043277@qq.com",
+    "avatar": "https://avatars.githubusercontent.com/112105991 ",
+    "certificationLink": "https://www.credly.com/badges/78c29f28-9345-4602-aa5b-42da4094cce7",
+    "badge": {
+      "type": "Open-Source Evangelist",
+      "achievement": "Associate"
+    },
+    "dateAdded": "2023/01/17"
   }
 ]
